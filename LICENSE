@@ -20,11 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-
-This license covers the source code only. It does not cover any exam content
-(questions, recordings, documents, transcripts, translations or analyses),
-none of which is distributed in this repository. The demo questions in demo/
-were written for this project and are covered by this license.
-The dictionary data built by scripts/p2/build_dict.py comes from Wiktionary
-(via kaikki.org) and is licensed CC BY-SA 4.0.

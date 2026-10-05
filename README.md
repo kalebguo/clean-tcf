@@ -191,4 +191,7 @@ flowchart LR
 ## 许可
 
 - 代码：MIT License，见 [LICENSE](LICENSE)。
+- `demo/` 里的示例题是为本项目自编的，也按 MIT License 发布。
+- 示例词典（`demo/public/data/p2/dict.json`）由 `scripts/p2/build_dict.py` 从维基词典数据（经 kaikki.org）生成，按 CC BY-SA 4.0 发布。
+- MIT License 不包括任何考试内容（题目、录音、文档、原文、译文、解析）。本仓库不分发这些内容。
 - 本项目和 France Éducation international（TCF 的主办方）没有任何关系。TCF 是其注册商标。
