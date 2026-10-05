@@ -1,0 +1,36 @@
+{
+  "id": "CO-1-03",
+  "segments": [
+    {"field": "transcript", "fr": "Bonjour monsieur Lavoie, ici Nadia Bérubé, de la gestion de l'immeuble.", "zh": "您好，Lavoie先生，我是大楼物业管理处的Nadia Bérubé。", "en": "Hello Mr Lavoie, this is Nadia Bérubé from the building management."},
+    {"field": "transcript", "fr": "Je vous appelle au sujet du chauffe-eau de votre appartement.", "zh": "我打电话是为了您公寓热水器的事。", "en": "I'm calling about the water heater in your apartment."},
+    {"field": "transcript", "fr": "Le technicien ne pourra pas venir jeudi comme prévu ; il passera plutôt lundi matin, entre huit heures et midi.", "zh": "技术员没法按原计划周四来了，改为周一上午8点到12点之间过来。", "en": "The technician can't come on Thursday as planned; he'll come on Monday morning instead, between 8 a.m. and noon."},
+    {"field": "transcript", "fr": "Comme il doit couper l'eau dans tout le bâtiment pendant deux heures, je préviens aussi vos voisins.", "zh": "因为他要给整栋楼停水两个小时，所以我也会通知您的邻居。", "en": "Since he has to cut off the water in the whole building for two hours, I'm letting your neighbours know too."},
+    {"field": "transcript", "fr": "Si vous n'êtes pas chez vous lundi, il faudrait me laisser une clé au bureau d'ici vendredi.", "zh": "如果您周一不在家，请在周五之前把钥匙留在办公室给我。", "en": "If you're not home on Monday, you'll need to leave me a key at the office by Friday."},
+    {"field": "transcript", "fr": "Vous pouvez me rappeler au numéro habituel.", "zh": "您可以打平常的号码给我回电。", "en": "You can call me back at the usual number."},
+    {"field": "transcript", "fr": "Merci et bonne journée !", "zh": "谢谢，祝您愉快！", "en": "Thank you, and have a good day!"},
+    {"field": "transcript", "fr": "Que doit faire monsieur Lavoie s'il est absent lundi ?", "zh": "如果Lavoie先生周一不在家，他应该怎么做？", "en": "What should Mr Lavoie do if he is away on Monday?"}
+  ],
+  "options": [
+    {"zh": "最迟周五把钥匙送到办公室。", "en": "Bring a key to the office by Friday at the latest."},
+    {"zh": "通知邻居停水的事。", "en": "Tell his neighbours about the water cut."},
+    {"zh": "让技术员周四来。", "en": "Ask the technician to come on Thursday."},
+    {"zh": "自己关掉公寓的水。", "en": "Turn off the water in his apartment himself."}
+  ],
+  "analysis": {
+    "summary": "问Lavoie先生周一不在家时该做什么。留言第五句给出了条件和要求：周五之前把钥匙留在办公室。",
+    "options": {
+      "A": {"correct": true, "why": "“il faudrait me laisser une clé au bureau d'ici vendredi”（请在周五之前把钥匙留在办公室）。d'ici vendredi 就是“最迟周五”。"},
+      "B": {"correct": false, "why": "通知邻居的是物业的Nadia，不是Lavoie先生：“je préviens aussi vos voisins”（我也会通知您的邻居）。选项借用了 voisins 和停水，是陷阱。"},
+      "C": {"correct": false, "why": "周四是原来的安排，技术员已经来不了：“ne pourra pas venir jeudi”（周四来不了）。选项借用了 jeudi，是陷阱。"},
+      "D": {"correct": false, "why": "停水是技术员要做的事：“il doit couper l'eau”（他要停水）。留言没有让Lavoie先生自己关水。选项借用了 couper l'eau，是陷阱。"}
+    }
+  },
+  "evidence": [
+    {"letter": "A", "field": "transcript", "fr": "il faudrait me laisser une clé au bureau d'ici vendredi"},
+    {"letter": "B", "field": "transcript", "fr": "je préviens aussi vos voisins"},
+    {"letter": "C", "field": "transcript", "fr": "Le technicien ne pourra pas venir jeudi comme prévu"},
+    {"letter": "D", "field": "transcript", "fr": "il doit couper l'eau dans tout le bâtiment"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

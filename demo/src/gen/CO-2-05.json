@@ -1,0 +1,37 @@
+{
+  "id": "CO-2-05",
+  "segments": [
+    {"field": "transcript", "fr": "Les montres qui comptent nos pas ont une vertu indéniable : elles rendent visible ce qui ne l'était pas.", "zh": "计步手表有一个不可否认的优点：它让原本看不见的东西变得看得见。", "en": "Watches that count our steps have one undeniable virtue: they make visible what wasn't."},
+    {"field": "transcript", "fr": "Beaucoup de mes patients découvrent qu'ils marchent à peine deux mille pas par jour, et ce simple constat suffit parfois à les faire bouger davantage.", "zh": "我的很多病人发现自己每天走不到两千步，有时光是这个发现就足以让他们多动一动。", "en": "Many of my patients discover that they walk barely two thousand steps a day, and that simple observation is sometimes enough to get them moving more."},
+    {"field": "transcript", "fr": "Je ne serai donc pas de ceux qui les condamnent en bloc.", "zh": "所以我不会全盘否定它们。", "en": "So I won't be one of those who condemn them wholesale."},
+    {"field": "transcript", "fr": "Ce qui m'inquiète, en revanche, c'est l'objectif qu'elles affichent par défaut, souvent dix mille pas, comme s'il marquait la frontière entre la santé et la maladie.", "zh": "不过，让我担心的是它们默认显示的目标，通常是一万步，好像这个数字就是健康和疾病的分界线。", "en": "What worries me, on the other hand, is the default target they display, often ten thousand steps, as if it marked the line between health and illness."},
+    {"field": "transcript", "fr": "Ce chiffre rond est commode, mais il n'a rien de magique : pour une personne sédentaire, passer de deux mille à cinq mille pas représente déjà un vrai bénéfice.", "zh": "这个整数方便好记，但并没有什么神奇之处：对久坐的人来说，从两千步增加到五千步就已经有实实在在的好处。", "en": "This round number is convenient, but there is nothing magic about it: for a sedentary person, going from two thousand to five thousand steps is already a real benefit."},
+    {"field": "transcript", "fr": "Or certains patients, faute d'atteindre le seuil affiché, se découragent et finissent par tout abandonner.", "zh": "可是有些病人达不到显示的目标，就灰心了，最后干脆全部放弃。", "en": "Yet some patients, unable to reach the displayed threshold, lose heart and end up giving up altogether."},
+    {"field": "transcript", "fr": "D'autres, à l'inverse, vivent l'écran comme un juge et culpabilisent chaque soir devant un cercle incomplet.", "zh": "另一些人则相反，把屏幕当成裁判，每天晚上看着没有闭合的圆环感到内疚。", "en": "Others, by contrast, treat the screen as a judge and feel guilty every evening in front of an unfinished circle."},
+    {"field": "transcript", "fr": "L'outil est bon ; c'est l'usage qu'on en fait qu'il faudrait revoir.", "zh": "工具本身是好的，需要反思的是我们使用它的方式。", "en": "The tool is good; it's the way we use it that should be rethought."},
+    {"field": "transcript", "fr": "Quelle critique ce médecin adresse-t-il aux montres connectées ?", "zh": "这位医生对智能手表提出了什么批评？", "en": "What criticism does this doctor make of smartwatches?"}
+  ],
+  "options": [
+    {"zh": "它们默认的目标可能让一些使用者灰心。", "en": "Their default target can discourage some users."},
+    {"zh": "它们计步不准。", "en": "They count steps inaccurately."},
+    {"zh": "它们让个人数据暴露在外。", "en": "They make personal data visible."},
+    {"zh": "它们对久坐的人没有用。", "en": "They are useless for sedentary people."}
+  ],
+  "analysis": {
+    "summary": "问医生对智能手表的批评。他先肯定手表的优点，再用“en revanche”（不过）转折：问题在于默认的一万步目标，有人达不到就灰心放弃。",
+    "options": {
+      "A": {"correct": true, "why": "“Ce qui m'inquiète, en revanche, c'est l'objectif qu'elles affichent par défaut”（让我担心的是它们默认显示的目标）；有些病人“faute d'atteindre le seuil affiché, se découragent”（达不到目标就灰心了）。"},
+      "B": {"correct": false, "why": "医生没有质疑计步是否准确。原文没有提到。"},
+      "C": {"correct": false, "why": "“elles rendent visible ce qui ne l'était pas”是医生肯定的优点，指让人看到自己走了多少，不是在批评隐私问题。选项借用了 rendent visible，是陷阱。"},
+      "D": {"correct": false, "why": "原文意思相反：对久坐的人，从两千步到五千步“représente déjà un vrai bénéfice”（已经有实实在在的好处）。选项借用了 sédentaire，是陷阱。"}
+    }
+  },
+  "evidence": [
+    {"letter": "A", "field": "transcript", "fr": "c'est l'objectif qu'elles affichent par défaut"},
+    {"letter": "A", "field": "transcript", "fr": "faute d'atteindre le seuil affiché, se découragent et finissent par tout abandonner"},
+    {"letter": "C", "field": "transcript", "fr": "elles rendent visible ce qui ne l'était pas"},
+    {"letter": "D", "field": "transcript", "fr": "pour une personne sédentaire, passer de deux mille à cinq mille pas représente déjà un vrai bénéfice"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

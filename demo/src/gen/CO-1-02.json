@@ -1,0 +1,33 @@
+{
+  "id": "CO-1-02",
+  "segments": [
+    {"field": "transcript", "fr": "Mesdames et messieurs, votre attention, s'il vous plaît.", "zh": "女士们，先生们，请注意。", "en": "Ladies and gentlemen, your attention, please."},
+    {"field": "transcript", "fr": "Le train de dix heures quinze pour Lyon partira avec trente minutes de retard.", "zh": "10点15分开往里昂的列车将晚点30分钟发车。", "en": "The 10:15 train to Lyon will leave 30 minutes late."},
+    {"field": "transcript", "fr": "Attention : ce train ne partira pas de la voie trois, mais de la voie sept.", "zh": "请注意：本次列车不在3站台发车，改在7站台发车。", "en": "Please note: this train will not leave from platform 3, but from platform 7."},
+    {"field": "transcript", "fr": "Les voyageurs qui ont une correspondance sont priés de se présenter au guichet d'information, dans le hall principal.", "zh": "需要换乘的旅客请到大厅的问讯处。", "en": "Passengers with a connection are asked to go to the information desk in the main hall."},
+    {"field": "transcript", "fr": "Nous vous prions de nous excuser pour ce retard.", "zh": "对于此次晚点，我们深表歉意。", "en": "We apologise for this delay."},
+    {"field": "transcript", "fr": "Que doivent faire les voyageurs qui ont une correspondance ?", "zh": "需要换乘的旅客应该怎么做？", "en": "What should passengers with a connection do?"}
+  ],
+  "options": [
+    {"zh": "直接去3站台。", "en": "Go straight to platform 3."},
+    {"zh": "在车上等30分钟。", "en": "Wait 30 minutes on the train."},
+    {"zh": "在售票窗口买一张新票。", "en": "Buy a new ticket at the counter."},
+    {"zh": "去车站大厅的服务台。", "en": "Go to the reception desk in the station hall."}
+  ],
+  "analysis": {
+    "summary": "问需要换乘的旅客该做什么。广播第四句专门对他们说：到大厅的问讯处去。",
+    "options": {
+      "A": {"correct": false, "why": "列车改到了7站台：“ne partira pas de la voie trois, mais de la voie sept”（不在3站台，改在7站台）。选项借用了 voie trois，是陷阱。"},
+      "B": {"correct": false, "why": "“trente minutes de retard”说的是列车晚点30分钟。广播没有让旅客在车上等。选项借用了 trente minutes，是陷阱。"},
+      "C": {"correct": false, "why": "广播说的是 guichet d'information（问讯处），不是售票窗口。广播也没有说要买新票。选项借用了 guichet，是陷阱。"},
+      "D": {"correct": true, "why": "“se présenter au guichet d'information, dans le hall principal”（到大厅的问讯处去）。选项用 accueil 替换了 guichet d'information。"}
+    }
+  },
+  "evidence": [
+    {"letter": "D", "field": "transcript", "fr": "sont priés de se présenter au guichet d'information, dans le hall principal"},
+    {"letter": "A", "field": "transcript", "fr": "ce train ne partira pas de la voie trois, mais de la voie sept"},
+    {"letter": "B", "field": "transcript", "fr": "partira avec trente minutes de retard"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

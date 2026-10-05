@@ -1,0 +1,40 @@
+{
+ "id": "CE-2-05",
+ "segments": [
+  {"field": "question", "fr": "Selon l'auteur, à quelle condition la semaine de quatre jours peut-elle tenir ses promesses ?", "zh": "作者认为，四天工作制在什么条件下才能兑现它的承诺？", "en": "According to the author, under what condition can the four-day week live up to its promises?"},
+  {"field": "passage", "fr": "La semaine de quatre jours, à quelle condition ?", "zh": "四天工作制，要满足什么条件？", "en": "The four-day week: on what condition?"},
+  {"field": "passage", "fr": "La semaine de quatre jours a tout pour séduire.", "zh": "四天工作制看起来处处吸引人。", "en": "The four-day week has everything going for it."},
+  {"field": "passage", "fr": "Les entreprises qui l'ont essayée parlent de salariés moins fatigués, d'absences moins nombreuses et de recrutements plus faciles.", "zh": "试行过的企业说，员工没那么累了，缺勤少了，招人也更容易了。", "en": "Companies that have tried it report less tired employees, fewer absences and easier recruitment."},
+  {"field": "passage", "fr": "Il serait malhonnête d'écarter ces résultats d'un revers de main : ils sont réels, et ils répondent à une lassitude que beaucoup de travailleurs expriment depuis des années.", "zh": "轻易否定这些结果是不诚实的：这些结果是真实的，也回应了很多劳动者多年来表达的疲惫感。", "en": "It would be dishonest to dismiss these results out of hand: they are real, and they respond to a weariness that many workers have been expressing for years."},
+  {"field": "passage", "fr": "Encore faut-il savoir de quoi l'on parle.", "zh": "但前提是要弄清楚我们在说什么。", "en": "Still, we need to know what we are talking about."},
+  {"field": "passage", "fr": "Dans bien des cas, on ne supprime pas une journée de travail : on répartit les mêmes heures sur quatre jours au lieu de cinq.", "zh": "在很多情况下，并没有减少一天的工作，只是把同样的工时分到四天里，而不是五天。", "en": "In many cases, a working day is not removed: the same hours are spread over four days instead of five."},
+  {"field": "passage", "fr": "Le vendredi libre se paie alors par des journées de dix heures, et la fatigue ne disparaît pas ; elle change simplement de jour.", "zh": "这样，空出来的周五要用每天十小时的工作来换，疲劳并没有消失，只是换了一天出现。", "en": "The free Friday is then paid for with ten-hour days, and the fatigue does not disappear; it simply moves to another day."},
+  {"field": "passage", "fr": "Pendant les premiers mois, l'enthousiasme masque cet effet, et on le mesure rarement au-delà.", "zh": "最初几个月，热情掩盖了这个影响，而几个月之后，很少有人再去测量它。", "en": "During the first months, enthusiasm masks this effect, and it is rarely measured beyond that."},
+  {"field": "passage", "fr": "La vraie question n'est donc pas le nombre de jours, mais la quantité de travail.", "zh": "所以真正的问题不是天数，而是工作量。", "en": "The real question, then, is not the number of days but the amount of work."},
+  {"field": "passage", "fr": "Une réforme qui commencerait par supprimer les réunions inutiles et les rapports que personne ne lit libérerait sans doute plus de temps qu'un calendrier redessiné.", "zh": "如果改革先从取消没用的会议和没人看的报告做起，大概会比重新安排日历省出更多时间。", "en": "A reform that began by cutting useless meetings and reports nobody reads would probably free up more time than a redesigned calendar."},
+  {"field": "passage", "fr": "C'est seulement à cette condition que la semaine de quatre jours tiendra ses promesses.", "zh": "只有在这个条件下，四天工作制才能兑现它的承诺。", "en": "Only on this condition will the four-day week live up to its promises."}
+ ],
+ "options": [
+  {"zh": "如果员工接受每天工作十小时。", "en": "If employees accept ten-hour days."},
+  {"zh": "如果在最初几个月里测量它的效果。", "en": "If its effects are measured during the first months."},
+  {"zh": "如果企业招人更容易。", "en": "If companies recruit more easily."},
+  {"zh": "如果工作量真正减少。", "en": "If the amount of work really decreases."}
+ ],
+ "analysis": {
+  "summary": "问作者认为四天工作制要满足什么条件。最后一段给出答案：真正的问题是工作量，要先减少没用的会议和报告。",
+  "options": {
+   "A": {"correct": false, "why": "每天十小时是作者批评的情况：“Le vendredi libre se paie alors par des journées de dix heures”（空出的周五要用十小时工作日来换），疲劳没有消失。陷阱：选项借用了 dix heures，但这是作者反对的做法。"},
+   "B": {"correct": false, "why": "作者说最初几个月热情会“masque cet effet”（掩盖这个影响）。只看最初几个月正是问题所在，不是条件。陷阱：选项借用了 premiers mois 和 mesure。"},
+   "C": {"correct": false, "why": "“recrutements plus faciles”（招人更容易）是试行企业说的好处。这是结果，不是作者提出的条件。"},
+   "D": {"correct": true, "why": "“La vraie question n'est donc pas le nombre de jours, mais la quantité de travail”（真正的问题不是天数，而是工作量）。作者接着说“C'est seulement à cette condition”（只有在这个条件下）四天工作制才能成功。"}
+  }
+ },
+ "evidence": [
+  {"letter": "D", "field": "passage", "fr": "La vraie question n'est donc pas le nombre de jours, mais la quantité de travail."},
+  {"letter": "A", "field": "passage", "fr": "Le vendredi libre se paie alors par des journées de dix heures"},
+  {"letter": "B", "field": "passage", "fr": "Pendant les premiers mois, l'enthousiasme masque cet effet"},
+  {"letter": "C", "field": "passage", "fr": "de recrutements plus faciles"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

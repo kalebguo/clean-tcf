@@ -1,0 +1,37 @@
+{
+ "id": "CE-2-03",
+ "segments": [
+  {"field": "question", "fr": "Qu'est-ce qui change pour les employés à partir du 3 février ?", "zh": "从2月3日起，员工有什么变化？", "en": "What changes for employees from 3 February?"},
+  {"field": "passage", "fr": "Objet : Nouvelle organisation du télétravail", "zh": "主题：远程办公的新安排", "en": "Subject: New remote-work arrangements"},
+  {"field": "passage", "fr": "Bonjour à toutes et à tous,", "zh": "大家好：", "en": "Hello everyone,"},
+  {"field": "passage", "fr": "À partir du 3 février, chaque membre de l'équipe pourra travailler à domicile deux jours par semaine, au lieu d'un seul actuellement.", "zh": "从2月3日起，团队每位成员每周可以在家工作两天，而现在只有一天。", "en": "From 3 February, every team member will be able to work from home two days a week, instead of just one at present."},
+  {"field": "passage", "fr": "Ces deux jours seront choisis avec votre responsable et resteront les mêmes chaque semaine.", "zh": "这两天由您和主管一起确定，而且每周固定不变。", "en": "These two days will be chosen with your manager and will stay the same every week."},
+  {"field": "passage", "fr": "Le mardi, en revanche, sera une journée de présence obligatoire pour tout le monde, car c'est le jour de notre réunion d'équipe.", "zh": "不过，周二所有人都必须到办公室，因为这天有我们的团队例会。", "en": "Tuesday, however, will be a compulsory office day for everyone, because it is the day of our team meeting."},
+  {"field": "passage", "fr": "Le service informatique prêtera un deuxième écran aux personnes qui en feront la demande avant le 20 janvier.", "zh": "信息技术部门会把第二块显示器借给在1月20日前提出申请的人。", "en": "The IT department will lend a second screen to anyone who requests one before 20 January."},
+  {"field": "passage", "fr": "Je vous remercie de votre souplesse et je reste disponible pour répondre à vos questions.", "zh": "感谢大家的配合，有问题可以随时问我。", "en": "Thank you for your flexibility; I remain available to answer your questions."},
+  {"field": "passage", "fr": "Nadia Lefèvre, directrice des ressources humaines", "zh": "人力资源总监 Nadia Lefèvre", "en": "Nadia Lefèvre, Human Resources Director"}
+ ],
+ "options": [
+  {"zh": "他们每周可以多在家工作一天。", "en": "They will be able to work from home one more day a week."},
+  {"zh": "他们每周自己选择远程办公的日子。", "en": "They will choose their remote-work days each week."},
+  {"zh": "他们只有周二在办公室上班。", "en": "They will work at the office only on Tuesdays."},
+  {"zh": "他们都会在1月20日收到第二块显示器。", "en": "They will all receive a second screen on 20 January."}
+ ],
+ "analysis": {
+  "summary": "问2月3日起员工有什么变化。邮件第一段说在家工作从每周一天变成两天。",
+  "options": {
+   "A": {"correct": true, "why": "“deux jours par semaine, au lieu d'un seul actuellement”（每周两天，而现在只有一天）。从一天变成两天，就是多了一天。"},
+   "B": {"correct": false, "why": "原文说这两天和主管一起定，而且“resteront les mêmes chaque semaine”（每周固定不变）。陷阱：选项借用了 choisis 和 chaque semaine，但意思相反。"},
+   "C": {"correct": false, "why": "每周只有两天在家，所以在办公室的日子不止周二。周二只是所有人都必须到岗的那一天。陷阱：选项借用了 mardi。"},
+   "D": {"correct": false, "why": "显示器只借给“qui en feront la demande”（提出申请的人），不是每个人都有。1月20日是申请截止日，不是发放日。陷阱：选项借用了 deuxième écran 和 20 janvier。"}
+  }
+ },
+ "evidence": [
+  {"letter": "A", "field": "passage", "fr": "pourra travailler à domicile deux jours par semaine, au lieu d'un seul actuellement"},
+  {"letter": "B", "field": "passage", "fr": "resteront les mêmes chaque semaine"},
+  {"letter": "C", "field": "passage", "fr": "Le mardi, en revanche, sera une journée de présence obligatoire pour tout le monde"},
+  {"letter": "D", "field": "passage", "fr": "prêtera un deuxième écran aux personnes qui en feront la demande avant le 20 janvier"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

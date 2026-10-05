@@ -1,0 +1,37 @@
+{
+ "id": "CE-2-02",
+ "segments": [
+  {"field": "question", "fr": "Qu'est-ce qui n'est pas compris dans le loyer ?", "zh": "什么不包含在房租里？", "en": "What is not included in the rent?"},
+  {"field": "passage", "fr": "À LOUER – Sous-location d'été", "zh": "出租——夏季转租", "en": "FOR RENT – Summer sublet"},
+  {"field": "passage", "fr": "Grand 3 ½ meublé, près du métro, dans le quartier Rosemont à Montréal.", "zh": "带家具的大一室一厅公寓，靠近地铁，位于蒙特利尔的 Rosemont 区。", "en": "Large furnished one-bedroom apartment, near the metro, in the Rosemont neighbourhood of Montreal."},
+  {"field": "passage", "fr": "Libre du 1er juillet au 31 août.", "zh": "7月1日至8月31日可入住。", "en": "Available from 1 July to 31 August."},
+  {"field": "passage", "fr": "Loyer : 950 $ par mois, chauffage et électricité compris.", "zh": "房租：每月950加元，包暖气和电费。", "en": "Rent: $950 a month, heating and electricity included."},
+  {"field": "passage", "fr": "Internet non compris.", "zh": "不包网费。", "en": "Internet not included."},
+  {"field": "passage", "fr": "Animaux non acceptés.", "zh": "不接受宠物。", "en": "No pets."},
+  {"field": "passage", "fr": "Idéal pour un étudiant ou une personne seule.", "zh": "适合学生或单身人士。", "en": "Ideal for a student or a single person."},
+  {"field": "passage", "fr": "Visites le soir après 18 h, seulement sur rendez-vous.", "zh": "晚上6点以后看房，必须预约。", "en": "Viewings in the evening after 6 p.m., by appointment only."},
+  {"field": "passage", "fr": "Contact : Julien, 438 555-0187", "zh": "联系人：Julien，438 555-0187", "en": "Contact: Julien, 438 555-0187"}
+ ],
+ "options": [
+  {"zh": "暖气。", "en": "Heating."},
+  {"zh": "电费。", "en": "Electricity."},
+  {"zh": "家具。", "en": "The furniture."},
+  {"zh": "网费。", "en": "Internet."}
+ ],
+ "analysis": {
+  "summary": "问房租不包什么。“Loyer”那一行说包暖气和电费，接着说“Internet non compris”（不包网费）。",
+  "options": {
+   "A": {"correct": false, "why": "“chauffage et électricité compris”（包暖气和电费），暖气包含在房租里。陷阱：选项用了原文的 chauffage，但原文说的是“包含”。"},
+   "B": {"correct": false, "why": "同一句“chauffage et électricité compris”说明电费也包含在房租里。陷阱：选项用了原文的 électricité。"},
+   "C": {"correct": false, "why": "“meublé”（带家具）说明家具已经在公寓里。广告没有说家具另外收费。"},
+   "D": {"correct": true, "why": "“Internet non compris”（不包网费）。"}
+  }
+ },
+ "evidence": [
+  {"letter": "D", "field": "passage", "fr": "Internet non compris."},
+  {"letter": "A", "field": "passage", "fr": "chauffage et électricité compris"},
+  {"letter": "C", "field": "passage", "fr": "Grand 3 ½ meublé"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

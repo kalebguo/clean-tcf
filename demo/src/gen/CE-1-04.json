@@ -1,0 +1,36 @@
+{
+ "id": "CE-1-04",
+ "segments": [
+  {"field": "question", "fr": "Que reproche Hélène Morvan au projet ?", "zh": "Hélène Morvan 批评这个项目什么？", "en": "What criticism does Hélène Morvan make of the project?"},
+  {"field": "passage", "fr": "Des cours d'école plus vertes à Valbourg", "zh": "Valbourg 的校园操场更绿了", "en": "Greener schoolyards in Valbourg"},
+  {"field": "passage", "fr": "Depuis septembre, trois des douze écoles primaires de Valbourg ont remplacé une partie de leur bitume par de la terre, des arbres et des bancs en bois.", "zh": "从九月起，Valbourg 的12所小学中有3所把操场上的一部分沥青换成了泥土、树木和木头长椅。", "en": "Since September, three of Valbourg's twelve primary schools have replaced part of their asphalt with soil, trees and wooden benches."},
+  {"field": "passage", "fr": "Les premières mesures réalisées par la ville sont encourageantes : lors des journées chaudes de juin, la température au sol y était inférieure de six degrés à celle des cours restées goudronnées.", "zh": "市政府的第一批测量结果令人鼓舞：六月炎热的日子里，这些操场的地面温度比仍铺着沥青的操场低6度。", "en": "The first measurements taken by the town are encouraging: on hot days in June, the ground temperature there was six degrees lower than in the yards that are still paved."},
+  {"field": "passage", "fr": "Le coût des travaux, environ 150 000 euros par école, est financé pour moitié par la région.", "zh": "工程费用约为每所学校15万欧元，其中一半由大区出资。", "en": "The cost of the work, about 150,000 euros per school, is half funded by the region."},
+  {"field": "passage", "fr": "Les enseignants notent aussi que les enfants se disputent moins pendant la récréation, même si aucune étude ne permet encore de le confirmer.", "zh": "老师们还注意到，课间休息时孩子们吵架少了，不过目前还没有研究能证实这一点。", "en": "Teachers also note that children argue less during break, although no study can confirm this yet."},
+  {"field": "passage", "fr": "Tout le monde n'est pourtant pas convaincu.", "zh": "不过，并不是所有人都认同。", "en": "Not everyone is convinced, however."},
+  {"field": "passage", "fr": "Pour Hélène Morvan, qui préside une association de parents d'élèves, le projet avance trop lentement : « À ce rythme, les derniers élèves attendront dix ans.", "zh": "家长协会主席 Hélène Morvan 认为项目进展太慢：“照这个速度，最后一批学生要等十年。", "en": "For Hélène Morvan, who chairs a parents' association, the project is moving too slowly: \"At this rate, the last pupils will wait ten years."},
+  {"field": "passage", "fr": "Il faudrait commencer par les écoles des quartiers où il fait le plus chaud, et non par celles qui sont déjà entourées de parcs. »", "zh": "应该先改造最热街区的学校，而不是那些周围已经有公园的学校。”", "en": "We should start with the schools in the hottest neighbourhoods, not with those already surrounded by parks.\""}
+ ],
+ "options": [
+  {"zh": "它让大区花钱太多。", "en": "It costs the region too much."},
+  {"zh": "它没有先从最需要的学校开始。", "en": "It does not start with the schools that need it most."},
+  {"zh": "它没有降低地面温度。", "en": "It has not lowered the ground temperature."},
+  {"zh": "它没有任何研究依据。", "en": "It is not based on any study."}
+ ],
+ "analysis": {
+  "summary": "问 Hélène Morvan 批评项目什么。答案在最后一段她的话里：应该先改造最热街区的学校。",
+  "options": {
+   "A": {"correct": false, "why": "费用和大区出资是记者给出的事实：“financé pour moitié par la région”（一半由大区出资）。Hélène Morvan 没有批评费用。陷阱：选项借用了 coût 和 région。"},
+   "B": {"correct": true, "why": "“Il faudrait commencer par les écoles des quartiers où il fait le plus chaud”（应该先从最热街区的学校开始）。她认为现在先改造的是周围已有公园的学校，顺序不对。"},
+   "C": {"correct": false, "why": "原文说的正好相反：地面温度“inférieure de six degrés”（低了6度）。"},
+   "D": {"correct": false, "why": "“aucune étude ne permet encore de le confirmer”（还没有研究能证实）只针对孩子少吵架这一点。这句是记者的话，不是 Hélène Morvan 的批评。陷阱：选项借用了 aucune étude。"}
+  }
+ },
+ "evidence": [
+  {"letter": "B", "field": "passage", "fr": "Il faudrait commencer par les écoles des quartiers où il fait le plus chaud, et non par celles qui sont déjà entourées de parcs."},
+  {"letter": "A", "field": "passage", "fr": "est financé pour moitié par la région"},
+  {"letter": "D", "field": "passage", "fr": "même si aucune étude ne permet encore de le confirmer"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

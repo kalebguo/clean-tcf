@@ -1,0 +1,43 @@
+{
+ "id": "CE-2-06",
+ "segments": [
+  {"field": "question", "fr": "Quelle est finalement la position du narrateur ?", "zh": "叙述者最终的立场是什么？", "en": "What, in the end, is the narrator's position?"},
+  {"field": "passage", "fr": "Au sommet de la colline, devant le plus beau panorama de la région, une trentaine de personnes tournaient le dos au paysage.", "zh": "山顶上，面对这一带最美的全景，大约三十个人背对着风景。", "en": "At the top of the hill, facing the finest panorama in the region, about thirty people stood with their backs to the landscape."},
+  {"field": "passage", "fr": "Elles se photographiaient avec lui, comme on pose à côté d'une célébrité qu'on n'a pas le temps de saluer.", "zh": "他们和风景合影，就像站在一位来不及打招呼的名人身边摆姿势拍照。", "en": "They photographed themselves with it, the way one poses next to a celebrity one has no time to greet."},
+  {"field": "passage", "fr": "Puis elles redescendaient, rassurées : la vue était bien là, dans leur téléphone, et l'on pourrait la regarder plus tard, c'est-à-dire jamais.", "zh": "然后他们放心地下山了：风景确实在那里，在他们的手机里，以后可以再看，也就是说，永远不会再看。", "en": "Then they went back down, reassured: the view was there, in their phones, and they could look at it later, that is to say never."},
+  {"field": "passage", "fr": "J'avoue avoir d'abord éprouvé, devant ce spectacle, le petit plaisir qu'on ressent à se croire plus sage que les autres.", "zh": "我承认，看到这个场面，我一开始感到一种小小的得意，就是自以为比别人聪明时的那种得意。", "en": "I admit that at first, watching this scene, I felt the small pleasure of believing oneself wiser than others."},
+  {"field": "passage", "fr": "Il n'a pas duré.", "zh": "这种得意没有持续多久。", "en": "It did not last."},
+  {"field": "passage", "fr": "En redescendant à mon tour, je me suis aperçu que je ne me rappelais déjà plus la couleur du lac.", "zh": "轮到我下山时，我发现自己已经想不起湖水的颜色了。", "en": "On my own way down, I realised that I could no longer remember the colour of the lake."},
+  {"field": "passage", "fr": "Je me souvenais en revanche très bien de la phrase que j'allais écrire sur ces touristes.", "zh": "相反，我却清楚地记得自己准备写这些游客的那句话。", "en": "On the other hand, I remembered very well the sentence I was going to write about those tourists."},
+  {"field": "passage", "fr": "Je n'avais pas regardé le paysage davantage qu'eux : je l'avais, moi aussi, transformé en souvenir avant de l'avoir vécu.", "zh": "我看风景并不比他们多：我也一样，在真正经历之前，就把它变成了回忆。", "en": "I had looked at the landscape no more than they had: I too had turned it into a memory before living it."},
+  {"field": "passage", "fr": "Seul l'appareil était différent.", "zh": "只是工具不同。", "en": "Only the device was different."},
+  {"field": "passage", "fr": "Le leur tenait dans la main ; le mien, dans la tête.", "zh": "他们的工具拿在手里；我的，在脑子里。", "en": "Theirs fitted in their hands; mine, in my head."},
+  {"field": "passage", "fr": "Peut-être ne faut-il pas accuser les téléphones.", "zh": "也许不该怪手机。", "en": "Perhaps we should not blame phones."},
+  {"field": "passage", "fr": "Avant eux, il y avait les cartes postales, les carnets de croquis et les journaux de voyage.", "zh": "在手机之前，就有明信片、速写本和旅行日记。", "en": "Before them, there were postcards, sketchbooks and travel journals."},
+  {"field": "passage", "fr": "Nous avons toujours eu peur de perdre ce que nous voyons, et c'est précisément cette peur qui nous empêche de le voir.", "zh": "我们一直害怕失去看到的东西，而正是这种害怕，让我们看不见它。", "en": "We have always been afraid of losing what we see, and it is precisely this fear that keeps us from seeing it."}
+ ],
+ "options": [
+  {"zh": "和游客不同，他懂得欣赏风景。", "en": "Unlike the tourists, he knew how to look at the landscape."},
+  {"zh": "他身上也有他原先批评游客的那个毛病。", "en": "He has the same flaw he first criticised in the tourists."},
+  {"zh": "手机让我们记不住看到的东西。", "en": "Phones prevent us from remembering what we see."},
+  {"zh": "描写风景比拍风景更好。", "en": "It is better to write about a landscape than to photograph it."}
+ ],
+ "analysis": {
+  "summary": "问叙述者最后的立场。他先嘲笑游客，然后承认自己也一样：“Seul l'appareil était différent”（只是工具不同）。",
+  "options": {
+   "A": {"correct": false, "why": "这是叙述者一开始的想法：“se croire plus sage que les autres”（自以为比别人聪明）。他马上说“Il n'a pas duré”（这种得意没持续多久），还承认忘了湖水的颜色。陷阱：选项把他放弃的看法当成了最终立场。"},
+   "B": {"correct": true, "why": "“Je n'avais pas regardé le paysage davantage qu'eux”（我看风景并不比他们多）。他也“transformé en souvenir avant de l'avoir vécu”（在经历之前就把它变成了回忆），和游客犯了同样的错。"},
+   "C": {"correct": false, "why": "原文明确说“Peut-être ne faut-il pas accuser les téléphones”（也许不该怪手机）。作者认为原因是“cette peur”（这种害怕），不是手机。陷阱：选项借用了 téléphones 和 voyons，但换了原因。"},
+   "D": {"correct": false, "why": "叙述者只记得要写的那句话，却忘了湖水的颜色。写作是他“在脑子里”的工具，和拍照一样。原文没有说写作更好。陷阱：选项借用了 écrire。"}
+  }
+ },
+ "evidence": [
+  {"letter": "B", "field": "passage", "fr": "Je n'avais pas regardé le paysage davantage qu'eux"},
+  {"letter": "B", "field": "passage", "fr": "Seul l'appareil était différent."},
+  {"letter": "A", "field": "passage", "fr": "le petit plaisir qu'on ressent à se croire plus sage que les autres"},
+  {"letter": "C", "field": "passage", "fr": "Peut-être ne faut-il pas accuser les téléphones."},
+  {"letter": "D", "field": "passage", "fr": "Je me souvenais en revanche très bien de la phrase que j'allais écrire sur ces touristes."}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

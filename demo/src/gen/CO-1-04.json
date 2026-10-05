@@ -1,0 +1,41 @@
+{
+  "id": "CO-1-04",
+  "segments": [
+    {"field": "transcript", "fr": "Vous avez ouvert il y a deux ans un espace de travail partagé dans un village de huit cents habitants, à deux heures de Montréal.", "zh": "两年前，您在一个只有800位居民的村子里开了一家共享办公空间，那里离蒙特利尔两小时路程。", "en": "Two years ago you opened a coworking space in a village of 800 people, two hours from Montreal."},
+    {"field": "transcript", "fr": "Qui sont vos membres ?", "zh": "您的会员都是些什么人？", "en": "Who are your members?"},
+    {"field": "transcript", "fr": "Surtout des gens qui travaillent à distance pour des entreprises de la ville.", "zh": "主要是为城里的公司远程工作的人。", "en": "Mostly people who work remotely for companies in the city."},
+    {"field": "transcript", "fr": "Au début, je pensais qu'ils viendraient pour la connexion Internet, qui est très lente dans la région.", "zh": "一开始，我以为他们是冲着网络来的，因为这一带网速很慢。", "en": "At first I thought they would come for the internet connection, which is very slow in the area."},
+    {"field": "transcript", "fr": "En réalité, la plupart ont une bonne connexion chez eux.", "zh": "实际上，大多数人家里的网络都不错。", "en": "In fact, most of them have a good connection at home."},
+    {"field": "transcript", "fr": "Ce qu'ils cherchent, ce sont des collègues : quelqu'un avec qui prendre un café ou discuter d'un problème.", "zh": "他们要找的是同事：能一起喝杯咖啡、讨论问题的人。", "en": "What they are looking for is colleagues: someone to have a coffee with or talk through a problem."},
+    {"field": "transcript", "fr": "On dit souvent que le télétravail va redonner vie aux villages.", "zh": "人们常说远程办公会让乡村重新焕发活力。", "en": "People often say remote work will bring villages back to life."},
+    {"field": "transcript", "fr": "Vous y croyez ?", "zh": "您相信吗？", "en": "Do you believe that?"},
+    {"field": "transcript", "fr": "En partie.", "zh": "部分相信。", "en": "Partly."},
+    {"field": "transcript", "fr": "Des familles s'installent, c'est vrai, et l'école a même ouvert une classe de plus cette année.", "zh": "确实有家庭搬过来，学校今年甚至多开了一个班。", "en": "Families are moving in, it's true, and the school even opened an extra class this year."},
+    {"field": "transcript", "fr": "Mais si les nouveaux habitants restent enfermés chez eux devant leur écran, le village ne revit pas vraiment.", "zh": "但如果新居民整天关在家里对着屏幕，村子并没有真正活起来。", "en": "But if the newcomers stay shut away at home in front of their screens, the village doesn't really come back to life."},
+    {"field": "transcript", "fr": "Il faut des lieux où les gens se croisent.", "zh": "需要有让人们碰面的地方。", "en": "There need to be places where people run into each other."},
+    {"field": "transcript", "fr": "Que pense cet homme de l'effet du télétravail sur les villages ?", "zh": "这位男士怎么看远程办公对乡村的影响？", "en": "What does this man think of the effect of remote work on villages?"}
+  ],
+  "options": [
+    {"zh": "光靠它就足以让乡村复兴。", "en": "On its own, it is enough to revive villages."},
+    {"zh": "它主要改善了网络连接。", "en": "It has mainly improved the internet connection."},
+    {"zh": "它的好处取决于有没有让人见面的场所。", "en": "Its benefits depend on there being places where people can meet."},
+    {"zh": "它促使家庭离开乡村。", "en": "It pushes families to leave villages."}
+  ],
+  "analysis": {
+    "summary": "问受访者怎么看远程办公对乡村的作用。他先说“En partie”（部分相信），再补充：没有让人碰面的地方，村子不会真正活起来。",
+    "options": {
+      "A": {"correct": false, "why": "他只回答“En partie”（部分相信）。他还说人们关在家里时“le village ne revit pas vraiment”（村子没有真正活起来）。选项里的 à lui seul（光靠它）和他的保留态度相反；faire revivre 借用了主持人的说法 redonner vie，是陷阱。"},
+      "B": {"correct": false, "why": "connexion Internet 出现在他开业时的错误判断里：其实大多数会员家里网络很好。他没有说远程办公改善了网络。选项借用了录音里的词，是陷阱。"},
+      "C": {"correct": true, "why": "“Il faut des lieux où les gens se croisent”（需要有让人们碰面的地方）。结合前一句，远程办公的好处要靠见面场所才能实现。"},
+      "D": {"correct": false, "why": "原文意思相反：“Des familles s'installent”（有家庭搬过来）。"}
+    }
+  },
+  "evidence": [
+    {"letter": "C", "field": "transcript", "fr": "si les nouveaux habitants restent enfermés chez eux devant leur écran, le village ne revit pas vraiment"},
+    {"letter": "C", "field": "transcript", "fr": "Il faut des lieux où les gens se croisent."},
+    {"letter": "A", "field": "transcript", "fr": "On dit souvent que le télétravail va redonner vie aux villages."},
+    {"letter": "B", "field": "transcript", "fr": "je pensais qu'ils viendraient pour la connexion Internet"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

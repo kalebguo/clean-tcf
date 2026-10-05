@@ -1,0 +1,35 @@
+{
+ "id": "CE-1-02",
+ "segments": [
+  {"field": "question", "fr": "Que se passe-t-il en mars et en avril à la bibliothèque ?", "zh": "三月和四月图书馆有什么情况？", "en": "What is happening at the library in March and April?"},
+  {"field": "passage", "fr": "BIBLIOTHÈQUE MUNICIPALE DES TILLEULS", "zh": "Les Tilleuls 市立图书馆", "en": "LES TILLEULS MUNICIPAL LIBRARY"},
+  {"field": "passage", "fr": "Nouveaux horaires à partir du 1er mars", "zh": "3月1日起实行新的开放时间", "en": "New opening hours from 1 March"},
+  {"field": "passage", "fr": "Du mardi au vendredi : de 10 h à 18 h.", "zh": "周二至周五：上午10点至下午6点。", "en": "Tuesday to Friday: 10 a.m. to 6 p.m."},
+  {"field": "passage", "fr": "Le samedi : de 9 h à 13 h.", "zh": "周六：上午9点至下午1点。", "en": "Saturday: 9 a.m. to 1 p.m."},
+  {"field": "passage", "fr": "Fermée le dimanche et le lundi.", "zh": "周日和周一闭馆。", "en": "Closed on Sundays and Mondays."},
+  {"field": "passage", "fr": "Pendant les travaux de la salle des enfants, en mars et en avril, les livres pour enfants sont dans la salle de lecture du premier étage.", "zh": "儿童阅览室施工期间，也就是三月和四月，儿童图书放在二楼的阅览室。", "en": "While the children's room is being renovated, in March and April, the children's books are in the first-floor reading room."},
+  {"field": "passage", "fr": "Le prêt reste gratuit pour tous les habitants de la ville.", "zh": "本市所有居民借书仍然免费。", "en": "Borrowing remains free for all residents of the town."}
+ ],
+ "options": [
+  {"zh": "儿童图书放在另一个房间。", "en": "The children's books are in another room."},
+  {"zh": "图书馆每天下午1点关门。", "en": "The library closes at 1 p.m. every day."},
+  {"zh": "借书开始收费。", "en": "Borrowing books is no longer free."},
+  {"zh": "二楼阅览室因施工关闭。", "en": "The first-floor reading room is closed for renovation."}
+ ],
+ "analysis": {
+  "summary": "问三月和四月图书馆有什么变化。答案在倒数第二行：儿童阅览室施工，儿童图书搬到了二楼阅览室。",
+  "options": {
+   "A": {"correct": true, "why": "“les livres pour enfants sont dans la salle de lecture du premier étage”（儿童图书放在二楼阅览室）。图书换了房间，就是“在另一个房间”。"},
+   "B": {"correct": false, "why": "下午1点关门只适用于周六：“Le samedi : de 9 h à 13 h”。周二到周五开到下午6点。陷阱：选项借用了 13 h，但把周六的时间说成了每天。"},
+   "C": {"correct": false, "why": "原文说的正好相反：“Le prêt reste gratuit”（借书仍然免费）。"},
+   "D": {"correct": false, "why": "施工的是“la salle des enfants”（儿童阅览室）。二楼阅览室没有关闭，反而接收了儿童图书。陷阱：选项借用了 salle de lecture du premier étage 和 travaux，但换了地点。"}
+  }
+ },
+ "evidence": [
+  {"letter": "A", "field": "passage", "fr": "les livres pour enfants sont dans la salle de lecture du premier étage"},
+  {"letter": "B", "field": "passage", "fr": "Le samedi : de 9 h à 13 h."},
+  {"letter": "D", "field": "passage", "fr": "Pendant les travaux de la salle des enfants"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

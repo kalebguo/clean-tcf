@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-web
+dist-ios
+build
+.venv
+.wrangler
+.dev.vars
+*.tsbuildinfo
+.DS_Store
+# your own bank and everything built from it (root only: src/data and demo/public are code and demo)
+/data/
+/public/

@@ -1,0 +1,31 @@
+{
+  "id": "CO-2-01",
+  "segments": [
+    {"field": "transcript", "fr": "Pardon monsieur, la pharmacie, c'est loin d'ici ?", "zh": "打扰一下，先生，药店离这儿远吗？", "en": "Excuse me, sir, is the pharmacy far from here?"},
+    {"field": "transcript", "fr": "Non, c'est tout près.", "zh": "不远，就在附近。", "en": "No, it's very close."},
+    {"field": "transcript", "fr": "Vous allez tout droit, puis à gauche.", "zh": "您一直往前走，然后左转。", "en": "Go straight ahead, then turn left."},
+    {"field": "transcript", "fr": "C'est à côté de la banque.", "zh": "就在银行旁边。", "en": "It's next to the bank."},
+    {"field": "transcript", "fr": "Où se trouve la pharmacie ?", "zh": "药店在哪里？", "en": "Where is the pharmacy?"}
+  ],
+  "options": [
+    {"zh": "在银行对面。", "en": "Opposite the bank."},
+    {"zh": "在火车站后面。", "en": "Behind the station."},
+    {"zh": "在银行旁边。", "en": "Next to the bank."},
+    {"zh": "离这儿很远，在右边。", "en": "Far from here, on the right."}
+  ],
+  "analysis": {
+    "summary": "问药店在哪里。男士的最后一句直接回答：在银行旁边。",
+    "options": {
+      "A": {"correct": false, "why": "录音说的是“à côté de”（在……旁边），不是“en face de”（在……对面）。选项用了录音里的 banque，是陷阱。"},
+      "B": {"correct": false, "why": "录音里没有提到火车站。"},
+      "C": {"correct": true, "why": "“C'est à côté de la banque.”（就在银行旁边。）"},
+      "D": {"correct": false, "why": "男士说“c'est tout près”（就在附近），方向是“à gauche”（左转）。选项借用了问句里的 loin d'ici，是陷阱。"}
+    }
+  },
+  "evidence": [
+    {"letter": "C", "field": "transcript", "fr": "C'est à côté de la banque."},
+    {"letter": "D", "field": "transcript", "fr": "la pharmacie, c'est loin d'ici ?"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

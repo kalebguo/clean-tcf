@@ -1,0 +1,38 @@
+{
+  "id": "CO-2-02",
+  "segments": [
+    {"field": "transcript", "fr": "Cabinet du docteur Moreau, bonjour.", "zh": "您好，这里是Moreau医生诊所。", "en": "Dr Moreau's surgery, good morning."},
+    {"field": "transcript", "fr": "Bonjour, je voudrais un rendez-vous pour mon fils.", "zh": "您好，我想给我儿子预约看病。", "en": "Hello, I'd like an appointment for my son."},
+    {"field": "transcript", "fr": "Il a de la fièvre depuis hier.", "zh": "他从昨天开始发烧。", "en": "He has had a fever since yesterday."},
+    {"field": "transcript", "fr": "Le docteur n'a plus de place ce matin, mais je peux vous proposer seize heures trente.", "zh": "医生今天上午已经约满了，不过我可以给您安排下午4点半。", "en": "The doctor has no slots left this morning, but I can offer you 4:30 p.m."},
+    {"field": "transcript", "fr": "C'est un peu tard…", "zh": "有点晚……", "en": "That's a bit late…"},
+    {"field": "transcript", "fr": "Vous n'avez rien avant ?", "zh": "没有更早的吗？", "en": "Don't you have anything earlier?"},
+    {"field": "transcript", "fr": "Non, désolée.", "zh": "没有，抱歉。", "en": "No, sorry."},
+    {"field": "transcript", "fr": "Sinon, il y a demain à neuf heures.", "zh": "不然的话，还有明天上午9点。", "en": "Otherwise, there's tomorrow at 9 a.m."},
+    {"field": "transcript", "fr": "Bon, je préfère cet après-midi, alors.", "zh": "好吧，那我还是选今天下午。", "en": "Well, I'd rather have this afternoon, then."},
+    {"field": "transcript", "fr": "Quand le fils va-t-il voir le médecin ?", "zh": "儿子什么时候去看医生？", "en": "When will the son see the doctor?"}
+  ],
+  "options": [
+    {"zh": "今天傍晚。", "en": "Today, late in the afternoon."},
+    {"zh": "今天上午，不用预约。", "en": "This morning, without an appointment."},
+    {"zh": "明天9点。", "en": "Tomorrow at 9 a.m."},
+    {"zh": "明天下午4点半。", "en": "Tomorrow at 4:30 p.m."}
+  ],
+  "analysis": {
+    "summary": "问儿子什么时候看医生。秘书给了两个时间：今天下午4点半和明天9点；父亲最后选了“cet après-midi”（今天下午）。",
+    "options": {
+      "A": {"correct": true, "why": "秘书提出“seize heures trente”（下午4点半），父亲最后说“je préfère cet après-midi”（我选今天下午）。下午4点半就是傍晚前后。"},
+      "B": {"correct": false, "why": "原文意思相反：“Le docteur n'a plus de place ce matin”（医生上午已经约满）。选项借用了 ce matin，是陷阱。"},
+      "C": {"correct": false, "why": "“demain à neuf heures”（明天9点）是秘书给的第二个选择，父亲没有选。选项借用了这个时间，是陷阱。"},
+      "D": {"correct": false, "why": "选项把两个时间拼在一起：4点半是今天下午，不是明天。"}
+    }
+  },
+  "evidence": [
+    {"letter": "A", "field": "transcript", "fr": "je peux vous proposer seize heures trente"},
+    {"letter": "A", "field": "transcript", "fr": "je préfère cet après-midi"},
+    {"letter": "B", "field": "transcript", "fr": "Le docteur n'a plus de place ce matin"},
+    {"letter": "C", "field": "transcript", "fr": "il y a demain à neuf heures"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

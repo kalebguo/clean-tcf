@@ -1,0 +1,31 @@
+{
+ "id": "CE-2-01",
+ "segments": [
+  {"field": "question", "fr": "Quand les enfants ont-ils leur cours de natation cette semaine ?", "zh": "这周孩子们什么时候上游泳课？", "en": "When do the children have their swimming lesson this week?"},
+  {"field": "passage", "fr": "PISCINE MUNICIPALE", "zh": "市立游泳池", "en": "MUNICIPAL SWIMMING POOL"},
+  {"field": "passage", "fr": "Attention : la piscine est fermée le samedi 14 juin pour nettoyage.", "zh": "注意：6月14日周六游泳池因清洁关闭。", "en": "Please note: the pool is closed on Saturday 14 June for cleaning."},
+  {"field": "passage", "fr": "Le cours de natation pour les enfants est déplacé au dimanche 15 juin, à 10 h.", "zh": "儿童游泳课改到6月15日周日上午10点。", "en": "The children's swimming lesson is moved to Sunday 15 June at 10 a.m."},
+  {"field": "passage", "fr": "Merci de votre compréhension !", "zh": "感谢您的理解！", "en": "Thank you for your understanding!"}
+ ],
+ "options": [
+  {"zh": "6月14日周六。", "en": "Saturday 14 June."},
+  {"zh": "6月15日周日。", "en": "Sunday 15 June."},
+  {"zh": "每个周日。", "en": "Every Sunday."},
+  {"zh": "6月16日周一。", "en": "Monday 16 June."}
+ ],
+ "analysis": {
+  "summary": "问这周儿童游泳课在哪天。通知说课程“déplacé au dimanche 15 juin”（改到6月15日周日）。",
+  "options": {
+   "A": {"correct": false, "why": "6月14日周六是游泳池关闭的日子：“fermée le samedi 14 juin”（6月14日周六关闭）。陷阱：选项借用了通知里的第一个日期。"},
+   "B": {"correct": true, "why": "“est déplacé au dimanche 15 juin, à 10 h”（改到6月15日周日上午10点）。"},
+   "C": {"correct": false, "why": "“déplacé”（改期）说明只是这一次改到周日。原文没有说每个周日都上课。"},
+   "D": {"correct": false, "why": "原文没有提到6月16日周一。"}
+  }
+ },
+ "evidence": [
+  {"letter": "B", "field": "passage", "fr": "Le cours de natation pour les enfants est déplacé au dimanche 15 juin, à 10 h."},
+  {"letter": "A", "field": "passage", "fr": "la piscine est fermée le samedi 14 juin pour nettoyage"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

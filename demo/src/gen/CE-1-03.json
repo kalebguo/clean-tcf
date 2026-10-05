@@ -1,0 +1,37 @@
+{
+ "id": "CE-1-03",
+ "segments": [
+  {"field": "question", "fr": "Que doit faire une personne qui dort mal depuis quatre mois ?", "zh": "一个人已经四个月睡不好，应该怎么做？", "en": "What should someone who has been sleeping badly for four months do?"},
+  {"field": "passage", "fr": "Bien dormir, ça s'apprend", "zh": "睡个好觉，是可以学会的", "en": "Sleeping well can be learned"},
+  {"field": "passage", "fr": "Le centre de santé du quartier organise quatre ateliers gratuits sur le sommeil, les jeudis soir du mois de novembre.", "zh": "社区健康中心在十一月的周四晚上举办四场免费的睡眠讲座。", "en": "The neighbourhood health centre is running four free workshops on sleep, on Thursday evenings in November."},
+  {"field": "passage", "fr": "Chaque atelier dure une heure et demie.", "zh": "每场讲座一个半小时。", "en": "Each workshop lasts an hour and a half."},
+  {"field": "passage", "fr": "Une infirmière y explique comment fonctionne le sommeil et pourquoi les écrans retardent l'endormissement.", "zh": "一名护士会在讲座上讲解睡眠的原理，以及屏幕为什么会推迟入睡。", "en": "A nurse explains how sleep works and why screens delay falling asleep."},
+  {"field": "passage", "fr": "Chaque participant reçoit un carnet pour noter ses heures de coucher et de réveil pendant un mois.", "zh": "每位参加者会拿到一个本子，用来记录一个月里每天上床和起床的时间。", "en": "Each participant receives a notebook to record their bedtimes and wake-up times for a month."},
+  {"field": "passage", "fr": "Attention : les ateliers ne remplacent pas une consultation.", "zh": "注意：讲座不能代替看医生。", "en": "Please note: the workshops do not replace a medical consultation."},
+  {"field": "passage", "fr": "Si vous dormez mal depuis plus de trois mois, parlez-en d'abord à votre médecin.", "zh": "如果您睡不好已经超过三个月，请先跟您的医生谈一谈。", "en": "If you have been sleeping badly for more than three months, talk to your doctor first."},
+  {"field": "passage", "fr": "Les places sont limitées à quinze personnes par atelier.", "zh": "每场讲座限15人。", "en": "Places are limited to fifteen people per workshop."},
+  {"field": "passage", "fr": "Inscription obligatoire à l'accueil du centre ou par téléphone au 514 555-0142.", "zh": "必须报名，可以在中心前台报名，也可以打电话514 555-0142报名。", "en": "Registration is required, at the centre's front desk or by phone at 514 555-0142."}
+ ],
+ "options": [
+  {"zh": "在三个月里填写记录本。", "en": "Fill in a notebook for three months."},
+  {"zh": "优先报名参加讲座。", "en": "Sign up for the workshops as a priority."},
+  {"zh": "周四晚上不看屏幕。", "en": "Avoid screens on Thursday evenings."},
+  {"zh": "先去看医生。", "en": "See their doctor first."}
+ ],
+ "analysis": {
+  "summary": "问睡不好已经四个月的人该怎么做。四个月超过了三个月，所以适用“Attention”那段：先去看医生。",
+  "options": {
+   "A": {"correct": false, "why": "本子只记录一个月：“pendant un mois”（一个月）。“三个月”是看医生的条件，不是记录的时间。陷阱：选项把 carnet 和 trois mois 拼在了一起。"},
+   "B": {"correct": false, "why": "原文没有说谁可以优先报名。原文反而说讲座“ne remplacent pas une consultation”（不能代替看医生）。"},
+   "C": {"correct": false, "why": "原文只说护士会讲“pourquoi les écrans retardent l'endormissement”（屏幕为什么推迟入睡）。周四晚上是讲座的时间。陷阱：选项借用了 écrans 和 jeudis soir。"},
+   "D": {"correct": true, "why": "“Si vous dormez mal depuis plus de trois mois, parlez-en d'abord à votre médecin”（睡不好超过三个月，请先跟医生谈）。四个月超过三个月，所以要先看医生。"}
+  }
+ },
+ "evidence": [
+  {"letter": "D", "field": "passage", "fr": "Si vous dormez mal depuis plus de trois mois, parlez-en d'abord à votre médecin."},
+  {"letter": "A", "field": "passage", "fr": "noter ses heures de coucher et de réveil pendant un mois"},
+  {"letter": "C", "field": "passage", "fr": "pourquoi les écrans retardent l'endormissement"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

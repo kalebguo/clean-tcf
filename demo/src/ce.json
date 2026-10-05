@@ -1,0 +1,201 @@
+{"questions": [
+ {"id": "CE-1-01", "section": "CE", "set": "1", "num": 1, "level": "A1",
+  "question": "Pourquoi Marc écrit-il à Léa ?",
+  "passage": [
+   "Salut Léa,",
+   "Je suis au dépanneur du coin. Il n'y a plus de lait à la maison. Tu veux autre chose ? Du pain, des œufs ? Réponds-moi vite, je paie dans cinq minutes.",
+   "Marc"
+  ],
+  "options": [
+   "Pour l'inviter au dépanneur.",
+   "Pour lui demander de payer les courses.",
+   "Pour savoir si elle a besoin de quelque chose.",
+   "Pour lui dire qu'il rentre dans cinq minutes."
+  ],
+  "answer": "C"},
+
+ {"id": "CE-1-02", "section": "CE", "set": "1", "num": 2, "level": "A2",
+  "question": "Que se passe-t-il en mars et en avril à la bibliothèque ?",
+  "passage": [
+   "BIBLIOTHÈQUE MUNICIPALE DES TILLEULS",
+   "Nouveaux horaires à partir du 1er mars",
+   "Du mardi au vendredi : de 10 h à 18 h.",
+   "Le samedi : de 9 h à 13 h.",
+   "Fermée le dimanche et le lundi.",
+   "Pendant les travaux de la salle des enfants, en mars et en avril, les livres pour enfants sont dans la salle de lecture du premier étage.",
+   "Le prêt reste gratuit pour tous les habitants de la ville."
+  ],
+  "options": [
+   "Les livres pour enfants sont dans une autre salle.",
+   "La bibliothèque ferme à 13 h tous les jours.",
+   "Le prêt de livres devient payant.",
+   "La salle de lecture du premier étage est fermée pour travaux."
+  ],
+  "answer": "A"},
+
+ {"id": "CE-1-03", "section": "CE", "set": "1", "num": 3, "level": "B1",
+  "question": "Que doit faire une personne qui dort mal depuis quatre mois ?",
+  "passage": [
+   "Bien dormir, ça s'apprend",
+   "Le centre de santé du quartier organise quatre ateliers gratuits sur le sommeil, les jeudis soir du mois de novembre. Chaque atelier dure une heure et demie. Une infirmière y explique comment fonctionne le sommeil et pourquoi les écrans retardent l'endormissement. Chaque participant reçoit un carnet pour noter ses heures de coucher et de réveil pendant un mois.",
+   "Attention : les ateliers ne remplacent pas une consultation. Si vous dormez mal depuis plus de trois mois, parlez-en d'abord à votre médecin.",
+   "Les places sont limitées à quinze personnes par atelier.",
+   "Inscription obligatoire à l'accueil du centre ou par téléphone au 514 555-0142."
+  ],
+  "options": [
+   "Remplir un carnet pendant trois mois.",
+   "S'inscrire en priorité aux ateliers.",
+   "Éviter les écrans le jeudi soir.",
+   "Consulter d'abord son médecin."
+  ],
+  "answer": "D"},
+
+ {"id": "CE-1-04", "section": "CE", "set": "1", "num": 4, "level": "B2",
+  "question": "Que reproche Hélène Morvan au projet ?",
+  "passage": [
+   "Des cours d'école plus vertes à Valbourg",
+   "Depuis septembre, trois des douze écoles primaires de Valbourg ont remplacé une partie de leur bitume par de la terre, des arbres et des bancs en bois. Les premières mesures réalisées par la ville sont encourageantes : lors des journées chaudes de juin, la température au sol y était inférieure de six degrés à celle des cours restées goudronnées.",
+   "Le coût des travaux, environ 150 000 euros par école, est financé pour moitié par la région. Les enseignants notent aussi que les enfants se disputent moins pendant la récréation, même si aucune étude ne permet encore de le confirmer.",
+   "Tout le monde n'est pourtant pas convaincu. Pour Hélène Morvan, qui préside une association de parents d'élèves, le projet avance trop lentement : « À ce rythme, les derniers élèves attendront dix ans. Il faudrait commencer par les écoles des quartiers où il fait le plus chaud, et non par celles qui sont déjà entourées de parcs. »"
+  ],
+  "options": [
+   "Il coûte trop cher à la région.",
+   "Il ne commence pas par les écoles qui en ont le plus besoin.",
+   "Il n'a pas fait baisser la température au sol.",
+   "Il ne repose sur aucune étude."
+  ],
+  "answer": "B"},
+
+ {"id": "CE-1-05", "section": "CE", "set": "1", "num": 5, "level": "C1",
+  "question": "Que pense l'auteur de la suppression des notes ?",
+  "passage": [
+   "Faut-il supprimer les notes ?",
+   "Chaque rentrée relance le même débat : faut-il supprimer les notes à l'école primaire ? Les partisans de la suppression ont des arguments solides. Une note isolée, un 8 sur 20 par exemple, dit à l'élève qu'il a échoué sans lui dire pourquoi. Elle finit souvent par devenir une étiquette qu'il porte pendant des années.",
+   "Je reconnais volontiers la force de ces critiques. Mais on aurait tort de croire que le problème disparaît avec le chiffre. Dans plusieurs écoles qui ont remplacé les notes par des appréciations, les parents reçoivent désormais des formules comme « en cours d'acquisition », que personne ne sait vraiment interpréter. L'élève n'en sait pas davantage sur ce qu'il doit travailler. Seules les familles les plus à l'aise avec le langage scolaire parviennent à lire entre les lignes.",
+   "Ce qui compte, au fond, ce n'est pas la forme de l'évaluation, mais ce qu'elle apprend à l'élève. Supprimer les notes sans rien changer d'autre reviendrait à casser le thermomètre pour faire baisser la fièvre. Une note accompagnée de deux phrases précises vaut mieux qu'un commentaire flou. Avant de changer d'outil, apprenons à mieux nous en servir."
+  ],
+  "options": [
+   "C'est le seul moyen d'éviter que la note devienne une étiquette.",
+   "Elle rend l'évaluation plus claire pour les parents.",
+   "Elle ne règle rien si l'évaluation n'aide pas l'élève à progresser.",
+   "Elle devrait être limitée à l'école primaire."
+  ],
+  "answer": "C"},
+
+ {"id": "CE-1-06", "section": "CE", "set": "1", "num": 6, "level": "C2",
+  "question": "Que veut montrer le narrateur à travers le portrait d'Armand ?",
+  "passage": [
+   "Mon voisin Armand est un homme qui gagne du temps. Il en gagne le matin, grâce à une machine qui prépare son café avant qu'il se lève ; il en gagne au bureau, où un logiciel trie ses courriels à sa place ; il en gagne le soir, en écoutant des livres en vitesse double pendant qu'il fait la vaisselle. Un jour, il m'a calculé avec une fierté sincère qu'il économisait ainsi près de trois heures par jour.",
+   "J'ai longtemps attendu de voir ce qu'il ferait de toutes ces heures. Je m'imaginais qu'il apprendrait enfin le violoncelle, ou qu'il s'assiérait sur le banc de son jardin, celui qu'il a repeint deux fois et où personne ne l'a jamais vu assis. Mais les heures gagnées ont la curieuse habitude de disparaître dès qu'on les met de côté, comme ces pièces qu'on glisse dans une poche trouée.",
+   "Hier encore, Armand m'a salué par-dessus la haie sans s'arrêter, son téléphone à la main. Il n'avait pas une minute, m'a-t-il expliqué : il devait aller acheter un appareil qui lui permettrait, enfin, de dormir plus vite.",
+   "Je lui ai souhaité bonne chance, sans oser lui demander où il rangeait tout ce temps. C'est sans doute l'homme le plus riche que je connaisse, et le plus pauvre aussi."
+  ],
+  "options": [
+   "À force de vouloir gagner du temps, Armand n'en profite jamais.",
+   "Armand a raison d'être fier des trois heures qu'il économise.",
+   "Armand est devenu riche grâce à son organisation.",
+   "Le narrateur aimerait, lui aussi, dormir plus vite."
+  ],
+  "answer": "A"},
+
+ {"id": "CE-2-01", "section": "CE", "set": "2", "num": 1, "level": "A1",
+  "question": "Quand les enfants ont-ils leur cours de natation cette semaine ?",
+  "passage": [
+   "PISCINE MUNICIPALE",
+   "Attention : la piscine est fermée le samedi 14 juin pour nettoyage.",
+   "Le cours de natation pour les enfants est déplacé au dimanche 15 juin, à 10 h.",
+   "Merci de votre compréhension !"
+  ],
+  "options": [
+   "Le samedi 14 juin.",
+   "Le dimanche 15 juin.",
+   "Tous les dimanches.",
+   "Le lundi 16 juin."
+  ],
+  "answer": "B"},
+
+ {"id": "CE-2-02", "section": "CE", "set": "2", "num": 2, "level": "A2",
+  "question": "Qu'est-ce qui n'est pas compris dans le loyer ?",
+  "passage": [
+   "À LOUER – Sous-location d'été",
+   "Grand 3 ½ meublé, près du métro, dans le quartier Rosemont à Montréal.",
+   "Libre du 1er juillet au 31 août.",
+   "Loyer : 950 $ par mois, chauffage et électricité compris. Internet non compris.",
+   "Animaux non acceptés. Idéal pour un étudiant ou une personne seule.",
+   "Visites le soir après 18 h, seulement sur rendez-vous.",
+   "Contact : Julien, 438 555-0187"
+  ],
+  "options": [
+   "Le chauffage.",
+   "L'électricité.",
+   "Les meubles.",
+   "Internet."
+  ],
+  "answer": "D"},
+
+ {"id": "CE-2-03", "section": "CE", "set": "2", "num": 3, "level": "B1",
+  "question": "Qu'est-ce qui change pour les employés à partir du 3 février ?",
+  "passage": [
+   "Objet : Nouvelle organisation du télétravail",
+   "Bonjour à toutes et à tous,",
+   "À partir du 3 février, chaque membre de l'équipe pourra travailler à domicile deux jours par semaine, au lieu d'un seul actuellement. Ces deux jours seront choisis avec votre responsable et resteront les mêmes chaque semaine.",
+   "Le mardi, en revanche, sera une journée de présence obligatoire pour tout le monde, car c'est le jour de notre réunion d'équipe. Le service informatique prêtera un deuxième écran aux personnes qui en feront la demande avant le 20 janvier.",
+   "Je vous remercie de votre souplesse et je reste disponible pour répondre à vos questions.",
+   "Nadia Lefèvre, directrice des ressources humaines"
+  ],
+  "options": [
+   "Ils pourront travailler chez eux un jour de plus par semaine.",
+   "Ils choisiront chaque semaine leurs jours de télétravail.",
+   "Ils travailleront au bureau seulement le mardi.",
+   "Ils recevront tous un deuxième écran le 20 janvier."
+  ],
+  "answer": "A"},
+
+ {"id": "CE-2-04", "section": "CE", "set": "2", "num": 4, "level": "B2",
+  "question": "Quelle limite des données la biologiste souligne-t-elle ?",
+  "passage": [
+   "Des milliers de bénévoles comptent les papillons",
+   "Pour la troisième année, l'inventaire participatif des papillons a mobilisé plus de 4 000 bénévoles dans le sud du Québec. Munis d'une application gratuite, les participants photographient les papillons qu'ils croisent, puis des spécialistes vérifient chaque observation. Résultat : près de 60 000 photos ont été validées cet été, soit deux fois plus que la première année.",
+   "Pour les chercheurs, ces données sont précieuses, car aucune équipe scientifique n'aurait les moyens de couvrir un territoire aussi vaste.",
+   "La biologiste Élodie Ferland, qui coordonne le projet, invite cependant à la prudence : « Nos cartes montrent surtout où vivent les bénévoles. Il y a beaucoup d'observations autour des villes et presque aucune dans les zones agricoles. Si une espèce semble rare dans une région, c'est peut-être seulement parce que personne n'y est allé la chercher. »",
+   "L'équipe prévoit d'envoyer l'an prochain des groupes de participants dans les secteurs les moins visités."
+  ],
+  "options": [
+   "Les photos des bénévoles sont souvent de mauvaise qualité.",
+   "Les papillons ont presque disparu des zones agricoles.",
+   "Les observations dépendent des lieux que fréquentent les participants.",
+   "Le nombre de bénévoles a baissé depuis la première année."
+  ],
+  "answer": "C"},
+
+ {"id": "CE-2-05", "section": "CE", "set": "2", "num": 5, "level": "C1",
+  "question": "Selon l'auteur, à quelle condition la semaine de quatre jours peut-elle tenir ses promesses ?",
+  "passage": [
+   "La semaine de quatre jours, à quelle condition ?",
+   "La semaine de quatre jours a tout pour séduire. Les entreprises qui l'ont essayée parlent de salariés moins fatigués, d'absences moins nombreuses et de recrutements plus faciles. Il serait malhonnête d'écarter ces résultats d'un revers de main : ils sont réels, et ils répondent à une lassitude que beaucoup de travailleurs expriment depuis des années.",
+   "Encore faut-il savoir de quoi l'on parle. Dans bien des cas, on ne supprime pas une journée de travail : on répartit les mêmes heures sur quatre jours au lieu de cinq. Le vendredi libre se paie alors par des journées de dix heures, et la fatigue ne disparaît pas ; elle change simplement de jour. Pendant les premiers mois, l'enthousiasme masque cet effet, et on le mesure rarement au-delà.",
+   "La vraie question n'est donc pas le nombre de jours, mais la quantité de travail. Une réforme qui commencerait par supprimer les réunions inutiles et les rapports que personne ne lit libérerait sans doute plus de temps qu'un calendrier redessiné. C'est seulement à cette condition que la semaine de quatre jours tiendra ses promesses."
+  ],
+  "options": [
+   "Si les salariés acceptent des journées de dix heures.",
+   "Si ses effets sont mesurés pendant les premiers mois.",
+   "Si les entreprises recrutent plus facilement.",
+   "Si la quantité de travail diminue réellement."
+  ],
+  "answer": "D"},
+
+ {"id": "CE-2-06", "section": "CE", "set": "2", "num": 6, "level": "C2",
+  "question": "Quelle est finalement la position du narrateur ?",
+  "passage": [
+   "Au sommet de la colline, devant le plus beau panorama de la région, une trentaine de personnes tournaient le dos au paysage. Elles se photographiaient avec lui, comme on pose à côté d'une célébrité qu'on n'a pas le temps de saluer. Puis elles redescendaient, rassurées : la vue était bien là, dans leur téléphone, et l'on pourrait la regarder plus tard, c'est-à-dire jamais.",
+   "J'avoue avoir d'abord éprouvé, devant ce spectacle, le petit plaisir qu'on ressent à se croire plus sage que les autres. Il n'a pas duré. En redescendant à mon tour, je me suis aperçu que je ne me rappelais déjà plus la couleur du lac. Je me souvenais en revanche très bien de la phrase que j'allais écrire sur ces touristes. Je n'avais pas regardé le paysage davantage qu'eux : je l'avais, moi aussi, transformé en souvenir avant de l'avoir vécu. Seul l'appareil était différent. Le leur tenait dans la main ; le mien, dans la tête.",
+   "Peut-être ne faut-il pas accuser les téléphones. Avant eux, il y avait les cartes postales, les carnets de croquis et les journaux de voyage. Nous avons toujours eu peur de perdre ce que nous voyons, et c'est précisément cette peur qui nous empêche de le voir."
+  ],
+  "options": [
+   "Contrairement aux touristes, il a su regarder le paysage.",
+   "Il a le même défaut que celui qu'il reprochait aux touristes.",
+   "Les téléphones nous empêchent de garder le souvenir de ce que nous voyons.",
+   "Il vaut mieux écrire sur un paysage que le photographier."
+  ],
+  "answer": "B"}
+]}

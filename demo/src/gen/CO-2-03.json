@@ -1,0 +1,41 @@
+{
+  "id": "CO-2-03",
+  "segments": [
+    {"field": "transcript", "fr": "Salut Hugo !", "zh": "嗨，Hugo！", "en": "Hi Hugo!"},
+    {"field": "transcript", "fr": "Tu as vu le message du professeur ?", "zh": "你看到老师的消息了吗？", "en": "Did you see the teacher's message?"},
+    {"field": "transcript", "fr": "La présentation de notre projet est avancée au mardi douze.", "zh": "我们项目的展示提前到12号星期二了。", "en": "Our project presentation has been moved forward to Tuesday the 12th."},
+    {"field": "transcript", "fr": "Mardi ?", "zh": "星期二？", "en": "Tuesday?"},
+    {"field": "transcript", "fr": "Mais on n'a même pas fini l'enquête !", "zh": "可我们连调查都还没做完！", "en": "But we haven't even finished the survey!"},
+    {"field": "transcript", "fr": "Il nous manque encore une dizaine de questionnaires.", "zh": "我们还差十来份问卷。", "en": "We're still missing about ten questionnaires."},
+    {"field": "transcript", "fr": "Je sais.", "zh": "我知道。", "en": "I know."},
+    {"field": "transcript", "fr": "Je propose qu'on s'arrête aux réponses qu'on a déjà et qu'on consacre le week-end à préparer les diapositives.", "zh": "我建议就用已经收到的答卷，周末专心做幻灯片。", "en": "I suggest we stop with the answers we already have and spend the weekend preparing the slides."},
+    {"field": "transcript", "fr": "Ça me va.", "zh": "我同意。", "en": "Fine with me."},
+    {"field": "transcript", "fr": "Mais il faudra expliquer pendant la présentation que notre échantillon est plus petit que prévu.", "zh": "不过展示的时候得说明，我们的样本比原计划少。", "en": "But we'll have to explain during the presentation that our sample is smaller than planned."},
+    {"field": "transcript", "fr": "D'accord.", "zh": "好的。", "en": "OK."},
+    {"field": "transcript", "fr": "Tu t'occupes de cette partie-là, et moi, je fais les graphiques.", "zh": "这部分你来负责，我来做图表。", "en": "You take care of that part, and I'll do the charts."},
+    {"field": "transcript", "fr": "Que décident les deux étudiants ?", "zh": "两个学生决定怎么做？", "en": "What do the two students decide?"}
+  ],
+  "options": [
+    {"zh": "请老师推迟展示。", "en": "Ask the teacher to postpone the presentation."},
+    {"zh": "再发十来份问卷。", "en": "Hand out about ten more questionnaires."},
+    {"zh": "这个周末就展示项目。", "en": "Present their project this weekend."},
+    {"zh": "用已经收到的答卷来做。", "en": "Work with the answers they already have."}
+  ],
+  "analysis": {
+    "summary": "问两个学生的决定。女生提议“s'arrête aux réponses qu'on a déjà”（就用已经收到的答卷），男生回答“Ça me va”（我同意）。",
+    "options": {
+      "A": {"correct": false, "why": "展示是老师提前的。两人接受了新日期，开始分工准备，没有打算请老师推迟。"},
+      "B": {"correct": false, "why": "“Il nous manque encore une dizaine de questionnaires”只是说还差十来份问卷。他们决定不再继续调查。选项借用了 dizaine de questionnaires，是陷阱。"},
+      "C": {"correct": false, "why": "周末是用来做幻灯片的：“consacre le week-end à préparer les diapositives”。展示在星期二。选项借用了 week-end，是陷阱。"},
+      "D": {"correct": true, "why": "“Je propose qu'on s'arrête aux réponses qu'on a déjà”（我建议就用已经收到的答卷），对方回答“Ça me va”（我同意）。"}
+    }
+  },
+  "evidence": [
+    {"letter": "D", "field": "transcript", "fr": "Je propose qu'on s'arrête aux réponses qu'on a déjà"},
+    {"letter": "D", "field": "transcript", "fr": "Ça me va."},
+    {"letter": "B", "field": "transcript", "fr": "Il nous manque encore une dizaine de questionnaires."},
+    {"letter": "C", "field": "transcript", "fr": "qu'on consacre le week-end à préparer les diapositives"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

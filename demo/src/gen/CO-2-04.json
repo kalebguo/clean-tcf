@@ -1,0 +1,41 @@
+{
+  "id": "CO-2-04",
+  "segments": [
+    {"field": "transcript", "fr": "Depuis un an, les autobus sont gratuits dans notre ville, et leur fréquentation a augmenté de près de quarante pour cent.", "zh": "一年来，我们城市的公交车免费了，乘客量增长了将近40%。", "en": "For a year now, buses have been free in our city, and ridership has risen by almost 40 percent."},
+    {"field": "transcript", "fr": "Mais les automobilistes ont-ils vraiment laissé leur voiture au garage ?", "zh": "但是开车的人真的把车留在车库里不开了吗？", "en": "But have drivers really left their cars in the garage?"},
+    {"field": "transcript", "fr": "Nous avons posé la question à un chercheur en transport.", "zh": "我们向一位交通研究人员提出了这个问题。", "en": "We put the question to a transport researcher."},
+    {"field": "transcript", "fr": "Les chiffres sont encourageants, mais il faut les lire avec prudence.", "zh": "这些数字令人鼓舞，但要谨慎解读。", "en": "The figures are encouraging, but they must be read with caution."},
+    {"field": "transcript", "fr": "Une bonne partie des nouveaux passagers marchaient ou prenaient leur vélo auparavant.", "zh": "很大一部分新乘客以前是步行或骑自行车的。", "en": "A good share of the new passengers used to walk or cycle."},
+    {"field": "transcript", "fr": "Les automobilistes, eux, ont peu changé leurs habitudes : pour eux, le prix du billet n'a jamais été le vrai problème.", "zh": "而开车的人几乎没有改变习惯：对他们来说，票价从来不是真正的问题。", "en": "Drivers, for their part, have barely changed their habits: for them, the ticket price was never the real problem."},
+    {"field": "transcript", "fr": "Ce qui les décourage, c'est d'attendre un autobus pendant trente minutes.", "zh": "让他们却步的，是等一班公交要等30分钟。", "en": "What puts them off is waiting thirty minutes for a bus."},
+    {"field": "transcript", "fr": "La gratuité serait donc une erreur ?", "zh": "那么，免费乘车是个错误吗？", "en": "So free transit is a mistake?"},
+    {"field": "transcript", "fr": "Je ne dirais pas ça.", "zh": "我不会这么说。", "en": "I wouldn't say that."},
+    {"field": "transcript", "fr": "Elle aide beaucoup les familles modestes.", "zh": "它对低收入家庭帮助很大。", "en": "It helps low-income families a lot."},
+    {"field": "transcript", "fr": "Mais si l'objectif est de réduire la circulation, il faudrait d'abord investir dans la fréquence des passages.", "zh": "但如果目标是减少路上的车流，就应该先投资提高发车频率。", "en": "But if the goal is to reduce traffic, the first step should be to invest in more frequent service."},
+    {"field": "transcript", "fr": "Selon le chercheur, qu'est-ce qui pourrait convaincre les automobilistes de prendre l'autobus ?", "zh": "按照这位研究人员的说法，什么能说服开车的人改乘公交？", "en": "According to the researcher, what could convince drivers to take the bus?"}
+  ],
+  "options": [
+    {"zh": "免费车票。", "en": "Free tickets."},
+    {"zh": "班次更密的公交车。", "en": "More frequent buses."},
+    {"zh": "新的自行车道。", "en": "New cycle lanes."},
+    {"zh": "给低收入家庭的补助。", "en": "Support for low-income families."}
+  ],
+  "analysis": {
+    "summary": "问什么能让开车的人改坐公交。研究人员说票价不是问题，让他们却步的是等车时间长，所以要先提高发车频率。",
+    "options": {
+      "A": {"correct": false, "why": "研究人员说“le prix du billet n'a jamais été le vrai problème”（票价从来不是真正的问题）。免费已经实行一年，开车的人习惯变化不大。"},
+      "B": {"correct": true, "why": "“Ce qui les décourage, c'est d'attendre un autobus pendant trente minutes”（让他们却步的是等车30分钟），所以要“investir dans la fréquence des passages”（投资提高发车频率）。"},
+      "C": {"correct": false, "why": "录音里的 vélo 说的是新乘客以前骑自行车，与说服开车的人无关。选项借用了这个细节，是陷阱。"},
+      "D": {"correct": false, "why": "“Elle aide beaucoup les familles modestes”说的是免费乘车的另一个好处，与说服开车的人无关。选项借用了 familles modestes，是陷阱。"}
+    }
+  },
+  "evidence": [
+    {"letter": "B", "field": "transcript", "fr": "Ce qui les décourage, c'est d'attendre un autobus pendant trente minutes."},
+    {"letter": "B", "field": "transcript", "fr": "il faudrait d'abord investir dans la fréquence des passages"},
+    {"letter": "A", "field": "transcript", "fr": "le prix du billet n'a jamais été le vrai problème"},
+    {"letter": "C", "field": "transcript", "fr": "marchaient ou prenaient leur vélo auparavant"},
+    {"letter": "D", "field": "transcript", "fr": "Elle aide beaucoup les familles modestes."}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

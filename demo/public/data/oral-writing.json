@@ -1,0 +1,432 @@
+{
+ "speaking": {
+  "sets": [
+   {
+    "id": "S2601-T2-01",
+    "ym": "2026.01",
+    "tache": 2,
+    "combo": 1,
+    "subjects": [
+     "O2-0001",
+     "O2-0002",
+     "O2-0003",
+     "O2-0004",
+     "O2-0005"
+    ]
+   },
+   {
+    "id": "S2602-T2-01",
+    "ym": "2026.02",
+    "tache": 2,
+    "combo": 1,
+    "subjects": [
+     "O2-0006",
+     "O2-0007",
+     "O2-0008",
+     "O2-0009",
+     "O2-0010"
+    ]
+   },
+   {
+    "id": "S2601-T3-01",
+    "ym": "2026.01",
+    "tache": 3,
+    "combo": 1,
+    "subjects": [
+     "O3-0001",
+     "O3-0002",
+     "O3-0003",
+     "O3-0004",
+     "O3-0005"
+    ]
+   },
+   {
+    "id": "S2602-T3-01",
+    "ym": "2026.02",
+    "tache": 3,
+    "combo": 1,
+    "subjects": [
+     "O3-0006",
+     "O3-0007",
+     "O3-0008",
+     "O3-0009",
+     "O3-0010"
+    ]
+   }
+  ],
+  "subjects": [
+   {
+    "id": "O2-0001",
+    "tache": 2,
+    "text": "Je suis responsable d’un jardin communautaire. Vous aimeriez y cultiver des légumes. Vous me posez des questions sur son fonctionnement (parcelles, outils, règles, coût).",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T2-01"
+    ],
+    "zh": "咨询社区菜园",
+    "cat": "environment"
+   },
+   {
+    "id": "O2-0002",
+    "tache": 2,
+    "text": "Je travaille dans une salle de sport. Vous souhaitez devenir membre. Vous me posez des questions sur les formules, les horaires et les cours collectifs.",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T2-01"
+    ],
+    "zh": "咨询健身房会员",
+    "cat": "health"
+   },
+   {
+    "id": "O2-0003",
+    "tache": 2,
+    "text": "Je suis un(e) collègue qui part en télétravail deux jours par semaine. Vous me posez des questions sur cette organisation (matériel, horaires, avantages, difficultés).",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T2-01"
+    ],
+    "zh": "了解同事的远程办公安排",
+    "cat": "work"
+   },
+   {
+    "id": "O2-0004",
+    "tache": 2,
+    "text": "Je loue un appartement meublé près du centre-ville. Ce logement vous intéresse. Vous me posez des questions avant de le visiter (loyer, charges, durée du bail, quartier, etc.).",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T2-01"
+    ],
+    "zh": "询问租住带家具公寓",
+    "cat": "housing"
+   },
+   {
+    "id": "O2-0005",
+    "tache": 2,
+    "text": "Je suis guide dans un parc national. Vous voulez faire une randonnée de deux jours. Vous me posez des questions sur le parcours, l’équipement et la sécurité.",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T2-01"
+    ],
+    "zh": "向国家公园向导咨询徒步",
+    "cat": "travel"
+   },
+   {
+    "id": "O2-0006",
+    "tache": 2,
+    "text": "Je dirige une école de musique. Vous voulez apprendre la guitare. Vous me posez des questions sur les cours (niveaux, horaires, tarifs, location d’instruments).",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T2-01"
+    ],
+    "zh": "咨询音乐学校的吉他课",
+    "cat": "leisure"
+   },
+   {
+    "id": "O2-0007",
+    "tache": 2,
+    "text": "Je vends mon vélo électrique sur un site de petites annonces. Vous voulez l’acheter. Vous me posez des questions sur son état, son prix et la livraison.",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T2-01"
+    ],
+    "zh": "向卖家询问二手电动自行车",
+    "cat": "consumption"
+   },
+   {
+    "id": "O2-0008",
+    "tache": 2,
+    "text": "Je suis conseiller(ère) dans un centre de formation pour adultes. Vous voulez reprendre des études. Vous me posez des questions sur les programmes, la durée et le financement.",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T2-01"
+    ],
+    "zh": "咨询成人培训课程",
+    "cat": "study"
+   },
+   {
+    "id": "O2-0009",
+    "tache": 2,
+    "text": "Je suis un(e) ami(e) qui vient d’adopter un chien. Vous pensez en adopter un aussi. Vous me posez des questions sur ce que cela change au quotidien (coût, temps, organisation).",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T2-01"
+    ],
+    "zh": "向朋友了解养狗的经历",
+    "cat": "family"
+   },
+   {
+    "id": "O2-0010",
+    "tache": 2,
+    "text": "Je coordonne les bénévoles d’une association qui aide les personnes âgées. Vous voulez donner un peu de votre temps. Vous me posez des questions sur les missions et l’organisation.",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T2-01"
+    ],
+    "zh": "了解养老志愿协会",
+    "cat": "society"
+   },
+   {
+    "id": "O3-0001",
+    "tache": 3,
+    "text": "Selon vous, faut-il interdire les voitures dans le centre des grandes villes ?",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T3-01"
+    ],
+    "zh": "大城市市中心应否禁车",
+    "cat": "environment"
+   },
+   {
+    "id": "O3-0002",
+    "tache": 3,
+    "text": "Pensez-vous que les réseaux sociaux rapprochent ou éloignent les gens ?",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T3-01"
+    ],
+    "zh": "社交网络让人更近还是更远",
+    "cat": "tech"
+   },
+   {
+    "id": "O3-0003",
+    "tache": 3,
+    "text": "Est-il préférable de travailler dans une grande entreprise ou dans une petite structure ?",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T3-01"
+    ],
+    "zh": "在大公司还是小企业工作更好",
+    "cat": "work"
+   },
+   {
+    "id": "O3-0004",
+    "tache": 3,
+    "text": "Les enfants devraient-ils apprendre à programmer dès l’école primaire ?",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T3-01"
+    ],
+    "zh": "小学是否应该教编程",
+    "cat": "study"
+   },
+   {
+    "id": "O3-0005",
+    "tache": 3,
+    "text": "Selon vous, voyager seul(e) est-il plus enrichissant que voyager en groupe ?",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "S2601-T3-01"
+    ],
+    "zh": "独自旅行是否比结伴更有收获",
+    "cat": "travel"
+   },
+   {
+    "id": "O3-0006",
+    "tache": 3,
+    "text": "Faut-il rendre les musées gratuits pour tout le monde ?",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T3-01"
+    ],
+    "zh": "博物馆应否对所有人免费",
+    "cat": "leisure"
+   },
+   {
+    "id": "O3-0007",
+    "tache": 3,
+    "text": "Le sport à l’école devrait-il occuper plus de place que les matières académiques ?",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T3-01"
+    ],
+    "zh": "学校体育课是否应比学科课更重要",
+    "cat": "health"
+   },
+   {
+    "id": "O3-0008",
+    "tache": 3,
+    "text": "Pensez-vous qu’il vaut mieux acheter ou louer son logement ?",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T3-01"
+    ],
+    "zh": "买房还是租房更好",
+    "cat": "housing"
+   },
+   {
+    "id": "O3-0009",
+    "tache": 3,
+    "text": "Selon vous, la publicité devrait-elle être interdite dans l’espace public ?",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T3-01"
+    ],
+    "zh": "公共空间应否禁止广告",
+    "cat": "consumption"
+   },
+   {
+    "id": "O3-0010",
+    "tache": 3,
+    "text": "Les personnes âgées ont-elles encore une place suffisante dans notre société ?",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "S2602-T3-01"
+    ],
+    "zh": "老年人在社会中是否有足够的位置",
+    "cat": "society"
+   }
+  ]
+ },
+ "writing": {
+  "sets": [
+   {
+    "id": "W2601-01",
+    "ym": "2026.01",
+    "set": 1,
+    "sameAs": null,
+    "t1": "W1-0001",
+    "t2": "W2-0001",
+    "t3": "W3-0001"
+   },
+   {
+    "id": "W2602-01",
+    "ym": "2026.02",
+    "set": 1,
+    "sameAs": null,
+    "t1": "W1-0002",
+    "t2": "W2-0002",
+    "t3": "W3-0002"
+   }
+  ],
+  "subjects": [
+   {
+    "id": "W1-0001",
+    "tache": 1,
+    "text": "Votre cousine Clara vient vous voir pour trois jours. Envoyez-lui un message pour présenter le programme que vous avez préparé (visites, repas, déplacements, etc.).",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "W2601-01"
+    ],
+    "zh": "给来访的表妹介绍三天的安排",
+    "cat": "leisure"
+   },
+   {
+    "id": "W2-0001",
+    "tache": 2,
+    "text": "Vous avez participé à une journée de bénévolat dans votre quartier. Rédigez un article pour le site de votre association : racontez votre expérience et expliquez pourquoi d’autres personnes devraient participer.",
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "W2601-01"
+    ],
+    "zh": "写一篇社区志愿日的经历文章",
+    "cat": "society"
+   },
+   {
+    "id": "W3-0001",
+    "tache": 3,
+    "text": "Le télétravail : progrès ou isolement ?",
+    "intro": "Le télétravail : progrès ou isolement ?",
+    "docs": [
+     "Depuis quelques années, de nombreux salariés travaillent depuis chez eux plusieurs jours par semaine. Ils gagnent du temps en évitant les trajets, organisent leur journée plus librement et se disent souvent plus concentrés. Pour les entreprises, c’est aussi l’occasion de réduire la taille des bureaux et d’attirer des candidats qui habitent loin.",
+     "Pourtant, travailler seul devant un écran a un prix. Les échanges informels entre collègues disparaissent, les nouveaux employés apprennent moins vite et la frontière entre vie privée et vie professionnelle devient floue. Certains salariés racontent qu’ils n’arrivent plus à « débrancher » le soir et qu’ils se sentent moins liés à leur équipe."
+    ],
+    "months": [
+     "2026.01"
+    ],
+    "sets": [
+     "W2601-01"
+    ],
+    "zh": "远程办公：进步还是孤立",
+    "cat": "work"
+   },
+   {
+    "id": "W1-0002",
+    "tache": 1,
+    "text": "Depuis votre emménagement, deux équipements de votre appartement ne fonctionnent pas. Écrivez à votre propriétaire pour décrire les problèmes et proposer une date d’intervention.",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "W2602-01"
+    ],
+    "zh": "给房东写信反映设备故障",
+    "cat": "housing"
+   },
+   {
+    "id": "W2-0002",
+    "tache": 2,
+    "text": "Vous avez testé une application contre le gaspillage alimentaire. Publiez votre avis sur un forum : présentez ses avantages et ses limites, puis dites si vous la recommandez.",
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "W2602-01"
+    ],
+    "zh": "在论坛评价防浪费食物的应用",
+    "cat": "consumption"
+   },
+   {
+    "id": "W3-0002",
+    "tache": 3,
+    "text": "Faut-il limiter le temps d’écran des adolescents ?",
+    "intro": "Faut-il limiter le temps d’écran des adolescents ?",
+    "docs": [
+     "Beaucoup de parents fixent des règles strictes : pas de téléphone pendant les repas, pas d’écran après vingt et une heures. Selon eux, ces limites protègent le sommeil, la concentration à l’école et le temps passé en famille. Plusieurs médecins recommandent aussi de réserver des moments sans écran pour favoriser l’activité physique.",
+     "D’autres estiment que l’écran n’est pas le problème, mais l’usage qu’on en fait. Un adolescent peut apprendre une langue, créer une vidéo ou garder le contact avec des amis éloignés. Pour eux, interdire ne sert à rien : il vaut mieux accompagner les jeunes et leur apprendre à choisir leurs contenus."
+    ],
+    "months": [
+     "2026.02"
+    ],
+    "sets": [
+     "W2602-01"
+    ],
+    "zh": "是否应限制青少年的屏幕时间",
+    "cat": "tech"
+   }
+  ]
+ }
+}

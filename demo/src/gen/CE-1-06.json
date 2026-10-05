@@ -1,0 +1,40 @@
+{
+ "id": "CE-1-06",
+ "segments": [
+  {"field": "question", "fr": "Que veut montrer le narrateur à travers le portrait d'Armand ?", "zh": "叙述者想通过 Armand 这个人物说明什么？", "en": "What does the narrator want to show through his portrait of Armand?"},
+  {"field": "passage", "fr": "Mon voisin Armand est un homme qui gagne du temps.", "zh": "我的邻居 Armand 是个节省时间的人。", "en": "My neighbour Armand is a man who saves time."},
+  {"field": "passage", "fr": "Il en gagne le matin, grâce à une machine qui prépare son café avant qu'il se lève ; il en gagne au bureau, où un logiciel trie ses courriels à sa place ; il en gagne le soir, en écoutant des livres en vitesse double pendant qu'il fait la vaisselle.", "zh": "早上他省时间，因为有一台机器在他起床前就煮好咖啡；在办公室他省时间，因为有软件替他整理邮件；晚上他也省时间，一边洗碗一边用两倍速听书。", "en": "He saves it in the morning, thanks to a machine that makes his coffee before he gets up; he saves it at the office, where software sorts his emails for him; he saves it in the evening, listening to books at double speed while he does the dishes."},
+  {"field": "passage", "fr": "Un jour, il m'a calculé avec une fierté sincère qu'il économisait ainsi près de trois heures par jour.", "zh": "有一天，他带着真诚的自豪给我算过：这样他每天能省下将近三个小时。", "en": "One day, with sincere pride, he worked out for me that he saved nearly three hours a day this way."},
+  {"field": "passage", "fr": "J'ai longtemps attendu de voir ce qu'il ferait de toutes ces heures.", "zh": "我等了很久，想看看他会用这些时间做什么。", "en": "For a long time I waited to see what he would do with all those hours."},
+  {"field": "passage", "fr": "Je m'imaginais qu'il apprendrait enfin le violoncelle, ou qu'il s'assiérait sur le banc de son jardin, celui qu'il a repeint deux fois et où personne ne l'a jamais vu assis.", "zh": "我想象他终于会去学大提琴，或者会坐到花园里的长椅上，就是那张他刷过两遍漆、却从没有人见他坐过的长椅。", "en": "I imagined he would finally learn the cello, or sit on the bench in his garden, the one he has painted twice and where no one has ever seen him sit."},
+  {"field": "passage", "fr": "Mais les heures gagnées ont la curieuse habitude de disparaître dès qu'on les met de côté, comme ces pièces qu'on glisse dans une poche trouée.", "zh": "可是省下来的时间有个奇怪的习惯：一存起来就不见了，就像放进破口袋里的硬币。", "en": "But saved hours have a curious habit of vanishing as soon as you put them aside, like coins slipped into a pocket with a hole in it."},
+  {"field": "passage", "fr": "Hier encore, Armand m'a salué par-dessus la haie sans s'arrêter, son téléphone à la main.", "zh": "就在昨天，Armand 手里拿着手机，隔着树篱跟我打了个招呼，脚步没停。", "en": "Just yesterday, Armand waved to me over the hedge without stopping, his phone in his hand."},
+  {"field": "passage", "fr": "Il n'avait pas une minute, m'a-t-il expliqué : il devait aller acheter un appareil qui lui permettrait, enfin, de dormir plus vite.", "zh": "他跟我解释说，他一分钟也没有：他得去买一台机器，好让自己终于能睡得快一点。", "en": "He didn't have a minute, he explained: he had to go and buy a device that would finally let him sleep faster."},
+  {"field": "passage", "fr": "Je lui ai souhaité bonne chance, sans oser lui demander où il rangeait tout ce temps.", "zh": "我祝他好运，却不敢问他把省下的那么多时间放到哪里去了。", "en": "I wished him luck, without daring to ask him where he kept all that time."},
+  {"field": "passage", "fr": "C'est sans doute l'homme le plus riche que je connaisse, et le plus pauvre aussi.", "zh": "他大概是我认识的最富有的人，也是最贫穷的人。", "en": "He is probably the richest man I know, and the poorest too."}
+ ],
+ "options": [
+  {"zh": "Armand 一心想省时间，结果从来没有享受过时间。", "en": "By trying so hard to save time, Armand never gets to enjoy it."},
+  {"zh": "Armand 为每天省下的三个小时感到自豪是对的。", "en": "Armand is right to be proud of the three hours he saves."},
+  {"zh": "Armand 靠自己的安排发了财。", "en": "Armand has become rich thanks to his organisation."},
+  {"zh": "叙述者也想睡得快一点。", "en": "The narrator would also like to sleep faster."}
+ ],
+ "analysis": {
+  "summary": "问叙述者通过 Armand 想表达什么。全文是反讽：Armand 不停地省时间，却从来没有时间，连睡觉都想“更快”。",
+  "options": {
+   "A": {"correct": true, "why": "原文说省下的时间“disparaître dès qu'on les met de côté”（一存起来就不见了）。Armand 也“n'avait pas une minute”（一分钟也没有），从没坐过自己的长椅。他省下时间，却从不享受。"},
+   "B": {"correct": false, "why": "“avec une fierté sincère”（带着真诚的自豪）只是描写 Armand 自己的感受。叙述者用反讽说明这三个小时没有用处。陷阱：选项借用了 trois heures 和 fierté。"},
+   "C": {"correct": false, "why": "“le plus riche”（最富有）是比喻：他省下的时间最多，却没有时间享受，所以也“le plus pauvre”（最贫穷）。原文没有说他赚了钱。陷阱：选项把比喻的 riche 当成了字面意思。"},
+   "D": {"correct": false, "why": "“dormir plus vite”（睡得更快）是 Armand 想买的机器。叙述者在讽刺这个想法，不是羡慕。陷阱：选项借用了 dormir plus vite。"}
+  }
+ },
+ "evidence": [
+  {"letter": "A", "field": "passage", "fr": "les heures gagnées ont la curieuse habitude de disparaître dès qu'on les met de côté"},
+  {"letter": "A", "field": "passage", "fr": "Il n'avait pas une minute"},
+  {"letter": "B", "field": "passage", "fr": "il m'a calculé avec une fierté sincère qu'il économisait ainsi près de trois heures par jour"},
+  {"letter": "C", "field": "passage", "fr": "C'est sans doute l'homme le plus riche que je connaisse, et le plus pauvre aussi."},
+  {"letter": "D", "field": "passage", "fr": "un appareil qui lui permettrait, enfin, de dormir plus vite"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

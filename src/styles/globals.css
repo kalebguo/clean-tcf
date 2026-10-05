@@ -1,0 +1,245 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/plus-jakarta-sans";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: "Plus Jakarta Sans Variable", -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  /* one colour per part of the exam, and the vocabulary book */
+  --color-co: var(--co);
+  --color-ce: var(--ce);
+  --color-ee: var(--ee);
+  --color-eo: var(--eo);
+  --color-vocab: var(--vocab);
+  --color-correct: var(--right);
+  --color-wrong: var(--wrong);
+  --color-lv-a1: var(--lv-a1);
+  --color-lv-a2: var(--lv-a2);
+  --color-lv-b1: var(--lv-b1);
+  --color-lv-b2: var(--lv-b2);
+  --color-lv-c1: var(--lv-c1);
+  --color-lv-c2: var(--lv-c2);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #161a22;
+  --card: #ffffff;
+  --card-foreground: #161a22;
+  --popover: #ffffff;
+  --popover-foreground: #161a22;
+  --primary: #2f6fe5;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f5;
+  --secondary-foreground: #1d2330;
+  --muted: #eef1f5;
+  --muted-foreground: #667085;
+  --accent: #eef1f5;
+  --accent-foreground: #1d2330;
+  --destructive: #e0393e;
+  --border: #e3e6eb;
+  --input: #dde1e7;
+  --ring: #2f6fe5;
+  --chart-1: #2f6fe5;
+  --chart-2: #12915a;
+  --chart-3: #e8590c;
+  --chart-4: #d6336c;
+  --chart-5: #7c5cdb;
+  --radius: 0.75rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #161a22;
+  --sidebar-primary: #2f6fe5;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #eef1f5;
+  --sidebar-accent-foreground: #1d2330;
+  --sidebar-border: #e3e6eb;
+  --sidebar-ring: #2f6fe5;
+
+  --co: #2f6fe5;
+  --ce: #12915a;
+  --ee: #e8590c;
+  --eo: #d6336c;
+  --vocab: #7c5cdb;
+  --right: #16a34a;
+  --wrong: #e0393e;
+  --lv-a1: #0f9d8a;
+  --lv-a2: #2f9e44;
+  --lv-b1: #d99a06;
+  --lv-b2: #e8590c;
+  --lv-c1: #d6336c;
+  --lv-c2: #7048e8;
+}
+
+.dark {
+  --background: #0e1014;
+  --foreground: #e7e9ee;
+  --card: #171a20;
+  --card-foreground: #e7e9ee;
+  --popover: #1b1f26;
+  --popover-foreground: #e7e9ee;
+  --primary: #5b8ff0;
+  --primary-foreground: #0b1220;
+  --secondary: #222731;
+  --secondary-foreground: #e7e9ee;
+  --muted: #222731;
+  --muted-foreground: #98a1b2;
+  --accent: #262b36;
+  --accent-foreground: #e7e9ee;
+  --destructive: #f06a6e;
+  --border: rgb(255 255 255 / 9%);
+  --input: rgb(255 255 255 / 14%);
+  --ring: #5b8ff0;
+  --chart-1: #5b8ff0;
+  --chart-2: #3ccf8e;
+  --chart-3: #ff8a4c;
+  --chart-4: #f06595;
+  --chart-5: #a48bf0;
+  --sidebar: #171a20;
+  --sidebar-foreground: #e7e9ee;
+  --sidebar-primary: #5b8ff0;
+  --sidebar-primary-foreground: #0b1220;
+  --sidebar-accent: #222731;
+  --sidebar-accent-foreground: #e7e9ee;
+  --sidebar-border: rgb(255 255 255 / 9%);
+  --sidebar-ring: #5b8ff0;
+
+  --co: #6b9cf3;
+  --ce: #3ccf8e;
+  --ee: #ff8a4c;
+  --eo: #f06595;
+  --vocab: #a48bf0;
+  --right: #4ade80;
+  --wrong: #f87171;
+  --lv-a1: #3cc9b4;
+  --lv-a2: #69db7c;
+  --lv-b1: #f5c242;
+  --lv-b2: #ff8a4c;
+  --lv-c1: #f06595;
+  --lv-c2: #a48bf0;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/*
+ * Marks inside question text. HighlightableText, SentenceHover and useTimeline set these classes and
+ * pseudo-elements from JavaScript, so they live here and not in the components.
+ */
+:root {
+  --hl: #f9e28b;
+  --hl-note: #e9b949;
+  color-scheme: light;
+}
+.dark {
+  --hl: #6b5a1f;
+  --hl-note: #c79a2a;
+  color-scheme: dark;
+}
+
+@layer components {
+  /* the learner's highlights; a note adds an underline */
+  mark.hl {
+    background: var(--hl);
+    color: inherit;
+    border-radius: 3px;
+    padding: 0 1px;
+    cursor: pointer;
+  }
+  mark.hl.hl-note {
+    box-shadow: inset 0 -2px 0 var(--hl-note);
+  }
+  /* hover translation: every piece of the sentence under the mouse */
+  .sent-hover {
+    background: color-mix(in srgb, var(--primary) 12%, transparent);
+    border-radius: 2px;
+  }
+  /* answer evidence (P2): underlines, and a letter badge after each piece.
+     The badge is ::after content so it is not part of the DOM text that highlights count in. */
+  .ev-answer {
+    text-decoration: underline 2px var(--right);
+    text-underline-offset: 4px;
+  }
+  .ev-trap {
+    text-decoration: underline dashed 1.5px var(--muted-foreground);
+    text-underline-offset: 4px;
+  }
+  .ev-end::after {
+    content: attr(data-ev-end);
+    font: 600 11px/1 var(--font-sans);
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin-left: 2px;
+    vertical-align: 3px;
+    user-select: none;
+  }
+  .ev-end-answer::after {
+    background: var(--right);
+  }
+  .ev-end-trap::after {
+    background: var(--muted-foreground);
+  }
+}
+
+/* the word being read aloud (CSS Custom Highlight API) */
+::highlight(tl-word) {
+  background-color: rgb(240 190 40 / 38%);
+}
+.dark ::highlight(tl-word) {
+  background-color: rgb(240 190 40 / 30%);
+}

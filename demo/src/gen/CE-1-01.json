@@ -1,0 +1,35 @@
+{
+ "id": "CE-1-01",
+ "segments": [
+  {"field": "question", "fr": "Pourquoi Marc écrit-il à Léa ?", "zh": "Marc 为什么给 Léa 发信息？", "en": "Why is Marc writing to Léa?"},
+  {"field": "passage", "fr": "Salut Léa,", "zh": "嗨，Léa：", "en": "Hi Léa,"},
+  {"field": "passage", "fr": "Je suis au dépanneur du coin.", "zh": "我在街角的便利店。", "en": "I'm at the corner store."},
+  {"field": "passage", "fr": "Il n'y a plus de lait à la maison.", "zh": "家里没有牛奶了。", "en": "We're out of milk at home."},
+  {"field": "passage", "fr": "Tu veux autre chose ?", "zh": "你还要别的吗？", "en": "Do you want anything else?"},
+  {"field": "passage", "fr": "Du pain, des œufs ?", "zh": "面包？鸡蛋？", "en": "Bread, eggs?"},
+  {"field": "passage", "fr": "Réponds-moi vite, je paie dans cinq minutes.", "zh": "快回我，我五分钟后结账。", "en": "Answer quickly, I'm paying in five minutes."},
+  {"field": "passage", "fr": "Marc", "zh": "Marc", "en": "Marc"}
+ ],
+ "options": [
+  {"zh": "为了邀请她去便利店。", "en": "To invite her to the convenience store."},
+  {"zh": "为了让她付买东西的钱。", "en": "To ask her to pay for the groceries."},
+  {"zh": "为了问她需不需要什么东西。", "en": "To find out whether she needs anything."},
+  {"zh": "为了告诉她他五分钟后到家。", "en": "To tell her he'll be home in five minutes."}
+ ],
+ "analysis": {
+  "summary": "问 Marc 为什么给 Léa 发信息。关键句是“Tu veux autre chose ?”（你还要别的吗？），他在问她要不要买东西。",
+  "options": {
+   "A": {"correct": false, "why": "原文只说“Je suis au dépanneur”（我在便利店）。他没有邀请 Léa 过来。陷阱：选项借用了原文的 dépanneur。"},
+   "B": {"correct": false, "why": "原文是“je paie dans cinq minutes”（我五分钟后结账）。付钱的是 Marc 自己。陷阱：选项借用了 payer，但把付钱的人换成了 Léa。"},
+   "C": {"correct": true, "why": "“Tu veux autre chose ? Du pain, des œufs ?”（你还要别的吗？面包？鸡蛋？）。Marc 在问 Léa 需要什么。"},
+   "D": {"correct": false, "why": "“dans cinq minutes”（五分钟后）说的是结账的时间，不是到家的时间。陷阱：选项借用了原文的时间，但换了动作。"}
+  }
+ },
+ "evidence": [
+  {"letter": "C", "field": "passage", "fr": "Tu veux autre chose ? Du pain, des œufs ?"},
+  {"letter": "A", "field": "passage", "fr": "Je suis au dépanneur du coin."},
+  {"letter": "B", "field": "passage", "fr": "je paie dans cinq minutes"}
+ ],
+ "check": {"agree": true, "note": ""},
+ "issues": []
+}

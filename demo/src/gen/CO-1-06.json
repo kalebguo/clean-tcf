@@ -1,0 +1,39 @@
+{
+  "id": "CO-1-06",
+  "segments": [
+    {"field": "transcript", "fr": "Réjouissons-nous : l'ennui est en voie de disparition.", "zh": "让我们高兴吧：无聊正在消失。", "en": "Let us rejoice: boredom is disappearing."},
+    {"field": "transcript", "fr": "La file d'attente, le trajet en autobus, les dix minutes qui précèdent une réunion : tous ces temps morts sont désormais rentabilisés par un article, un message, une courte vidéo ou une leçon de langue.", "zh": "排队、坐公交、开会前的十分钟：这些空闲时间如今都被一篇文章、一条消息、一段短视频或一节语言课利用起来了。", "en": "The queue, the bus ride, the ten minutes before a meeting: all this dead time is now put to use with an article, a message, a short video or a language lesson."},
+    {"field": "transcript", "fr": "Plus une seconde ne se perd, et nous voilà enfin débarrassés de ce vieil ennemi qui hantait les dimanches de notre enfance.", "zh": "一秒钟都不浪费，我们终于摆脱了这个在童年的星期天里纠缠我们的老对手。", "en": "Not a second is lost, and at last we are rid of the old enemy that haunted the Sundays of our childhood."},
+    {"field": "transcript", "fr": "Il faudrait sans doute s'en féliciter, et les statistiques de nos téléphones nous y invitent chaque semaine.", "zh": "这大概值得庆贺，我们手机里的统计数据每周都在这样提醒我们。", "en": "No doubt we should be pleased about it, and our phones' statistics encourage us to be, every week."},
+    {"field": "transcript", "fr": "Je remarque simplement que les idées qui ont compté dans ma vie ne me sont jamais venues devant un écran, mais en regardant par la fenêtre d'un train, ou en attendant quelqu'un qui était en retard.", "zh": "我只是注意到，我一生中重要的想法从来不是在屏幕前产生的，而是在望着火车窗外的时候，或者在等一个迟到的人的时候。", "en": "I simply note that the ideas that have mattered in my life never came to me in front of a screen, but while looking out of a train window, or waiting for someone who was late."},
+    {"field": "transcript", "fr": "Ce n'était pas du temps perdu ; c'était du temps libre, au sens fort du mot.", "zh": "那不是浪费的时间，而是真正意义上的自由时间。", "en": "That was not wasted time; it was free time, in the full sense of the word."},
+    {"field": "transcript", "fr": "L'esprit qu'on laisse sans occupation ne reste pas inactif : il trie, il rapproche, il invente, à condition qu'on ne l'interrompe pas toutes les trente secondes.", "zh": "无事可做的头脑并没有闲着：它在整理、联系、创造，前提是别每三十秒就打断它。", "en": "A mind left unoccupied does not stay idle: it sorts, connects and invents, as long as it is not interrupted every thirty seconds."},
+    {"field": "transcript", "fr": "Nous avons comblé tous les vides.", "zh": "我们填满了所有的空白。", "en": "We have filled every gap."},
+    {"field": "transcript", "fr": "Encore faudrait-il être sûrs qu'ils étaient vides.", "zh": "可是，还得先确定它们原本真的是空白。", "en": "We would still need to be sure they were empty."},
+    {"field": "transcript", "fr": "Quelle est la position réelle de l'auteur ?", "zh": "作者的真实立场是什么？", "en": "What is the author's real position?"}
+  ],
+  "options": [
+    {"zh": "他庆幸空闲时间终于被利用起来了。", "en": "He is pleased that dead time is finally put to use."},
+    {"zh": "他建议读文章，而不是看视频。", "en": "He recommends reading an article rather than watching a video."},
+    {"zh": "他认为无聊妨碍头脑工作。", "en": "He thinks boredom stops the mind from working."},
+    {"zh": "他怀疑把每一刻都填满是不是进步。", "en": "He doubts that filling every moment is progress."}
+  ],
+  "analysis": {
+    "summary": "问作者的真实立场。开头的“Réjouissons-nous”和“Il faudrait sans doute s'en féliciter”是反语；从“Je remarque simplement”开始，他说明空闲时间对思考有价值，结尾质疑这些时间本来是否“空”。",
+    "options": {
+      "A": {"correct": false, "why": "这是对反语的字面理解。“Il faudrait sans doute s'en féliciter”（这大概值得庆贺）是讽刺，后文马上转向相反的看法。选项借用了 féliciter 和 temps morts，是陷阱。"},
+      "B": {"correct": false, "why": "“un article, un message, une courte vidéo”只是列举填满空闲时间的方式。作者没有比较它们，也没有提建议。选项借用了 article 和 vidéo，是陷阱。"},
+      "C": {"correct": false, "why": "原文意思相反：“L'esprit qu'on laisse sans occupation ne reste pas inactif”（无事可做的头脑并没有闲着），它还会“invente”（创造）。"},
+      "D": {"correct": true, "why": "“Ce n'était pas du temps perdu”（那不是浪费的时间）；结尾“Encore faudrait-il être sûrs qu'ils étaient vides”（还得确定它们原本真的是空白）。两句都表明他怀疑填满每一刻是一种收获。"}
+    }
+  },
+  "evidence": [
+    {"letter": "D", "field": "transcript", "fr": "Encore faudrait-il être sûrs qu'ils étaient vides."},
+    {"letter": "D", "field": "transcript", "fr": "Ce n'était pas du temps perdu ; c'était du temps libre, au sens fort du mot."},
+    {"letter": "A", "field": "transcript", "fr": "Il faudrait sans doute s'en féliciter"},
+    {"letter": "B", "field": "transcript", "fr": "un article, un message, une courte vidéo"},
+    {"letter": "C", "field": "transcript", "fr": "L'esprit qu'on laisse sans occupation ne reste pas inactif"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}

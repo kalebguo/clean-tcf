@@ -1,0 +1,37 @@
+{
+  "id": "CO-1-05",
+  "segments": [
+    {"field": "transcript", "fr": "Depuis quelques années, les ateliers de réparation se multiplient dans nos quartiers : on y apporte un grille-pain en panne, une chaise bancale ou un vélo qui grince, et des bénévoles aident chacun à remettre son objet en état.", "zh": "近几年，我们的街区里出现了越来越多的维修工坊：人们把坏了的烤面包机、摇晃的椅子或吱吱响的自行车带过去，志愿者帮每个人把东西修好。", "en": "In recent years, repair workshops have been multiplying in our neighbourhoods: people bring a broken toaster, a wobbly chair or a squeaky bike, and volunteers help each of them fix it."},
+    {"field": "transcript", "fr": "On les présente souvent comme une réponse à la montagne de déchets que nous produisons.", "zh": "人们常把它们说成是应对我们制造的大量垃圾的办法。", "en": "They are often presented as an answer to the mountain of waste we produce."},
+    {"field": "transcript", "fr": "Soyons honnêtes : à l'échelle d'un pays, les quantités d'objets sauvés restent modestes, et ce ne sont pas quelques samedis après-midi qui vont changer la manière dont l'industrie fabrique ses produits.", "zh": "说实话：从全国范围看，被修好的物品数量仍然有限；几个周六下午的活动，也改变不了工业生产产品的方式。", "en": "Let's be honest: on a national scale, the number of items saved is still modest, and a few Saturday afternoons won't change the way industry makes its products."},
+    {"field": "transcript", "fr": "Faut-il pour autant juger ces ateliers inutiles ?", "zh": "那么，就该认为这些工坊没有用吗？", "en": "Does that mean we should consider these workshops useless?"},
+    {"field": "transcript", "fr": "Certainement pas.", "zh": "当然不是。", "en": "Certainly not."},
+    {"field": "transcript", "fr": "Leur véritable intérêt est ailleurs : on y apprend à démonter, à comprendre, à ne plus voir une panne comme une fatalité.", "zh": "它们真正的意义在别处：人们在那里学会拆开东西、弄懂原理，不再把故障看成无法改变的事。", "en": "Their real value lies elsewhere: there, people learn to take things apart, to understand them, and to stop seeing a breakdown as inevitable."},
+    {"field": "transcript", "fr": "Et celui qui a réparé lui-même sa lampe ne regarde plus de la même façon l'objet qu'il s'apprête à acheter : il vérifie s'il peut s'ouvrir, si les pièces se remplacent.", "zh": "自己修过台灯的人，再看准备买的东西时眼光就不一样了：他会检查它能不能打开，零件能不能更换。", "en": "And someone who has repaired their own lamp no longer looks the same way at the item they are about to buy: they check whether it can be opened and whether its parts can be replaced."},
+    {"field": "transcript", "fr": "Le grille-pain sauvé compte finalement moins que le regard qui a changé.", "zh": "说到底，修好一台烤面包机，不如人们眼光的改变重要。", "en": "In the end, the rescued toaster matters less than the change in how people see things."},
+    {"field": "transcript", "fr": "Selon la chroniqueuse, quel est le principal intérêt des ateliers de réparation ?", "zh": "按照这位专栏主持人的说法，维修工坊的主要意义是什么？", "en": "According to the columnist, what is the main value of repair workshops?"}
+  ],
+  "options": [
+    {"zh": "它们大幅减少了垃圾量。", "en": "They greatly reduce the amount of waste."},
+    {"zh": "它们改变了人们看待物品的方式。", "en": "They change the way people see objects."},
+    {"zh": "它们迫使工业界生产可维修的产品。", "en": "They force industry to make repairable products."},
+    {"zh": "它们在街区居民之间建立联系。", "en": "They create bonds between neighbourhood residents."}
+  ],
+  "analysis": {
+    "summary": "问维修工坊的主要意义。主持人先承认它们减少的垃圾有限，再用“Leur véritable intérêt est ailleurs”（真正的意义在别处）转到重点：改变人们看待物品的眼光。",
+    "options": {
+      "A": {"correct": false, "why": "主持人说被修好的物品数量“restent modestes”（仍然有限）。“montagne de déchets”只是别人常有的说法。选项借用了 déchets，是陷阱。"},
+      "B": {"correct": true, "why": "修过东西的人买东西时“ne regarde plus de la même façon”（眼光不一样了）；结尾又说“le regard qui a changé”（眼光的改变）更重要。"},
+      "C": {"correct": false, "why": "原文意思相反：几个周六下午的活动改变不了“la manière dont l'industrie fabrique ses produits”（工业生产产品的方式）。选项借用了 industrie，是陷阱。"},
+      "D": {"correct": false, "why": "录音只说工坊开在“nos quartiers”（我们的街区），没有说它们能建立邻里关系。这是常见的说法，但原文没有提到。"}
+    }
+  },
+  "evidence": [
+    {"letter": "B", "field": "transcript", "fr": "Le grille-pain sauvé compte finalement moins que le regard qui a changé."},
+    {"letter": "B", "field": "transcript", "fr": "ne regarde plus de la même façon l'objet qu'il s'apprête à acheter"},
+    {"letter": "A", "field": "transcript", "fr": "On les présente souvent comme une réponse à la montagne de déchets que nous produisons."},
+    {"letter": "C", "field": "transcript", "fr": "ce ne sont pas quelques samedis après-midi qui vont changer la manière dont l'industrie fabrique ses produits"}
+  ],
+  "check": {"agree": true, "note": ""},
+  "issues": []
+}
