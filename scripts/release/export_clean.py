@@ -34,6 +34,7 @@ INCLUDE = [
     "scripts/p2/hant2hans.swift", "scripts/p2/local_mt.py", "scripts/p2/segment.py", "scripts/p2/tts.py",
     "scripts/p2/tts_synth.swift", "scripts/p2/align_audio.py", "scripts/p2/check_align.py", "scripts/p2/validate_gen.py",
 ]
+READMES = {"README.public.md": "README.md", "README.public.zh-CN.md": "README.zh-CN.md"}
 SKIP_PARTS = {"__pycache__", ".DS_Store"}
 ICLOUD_COPY = re.compile(r" \d+(\.[^.]+)?$")  # "name 2.json": a copy made by iCloud
 
@@ -66,7 +67,8 @@ def copy(dest: Path) -> list[Path]:
             out.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(p, out)
             copied.append(out)
-    shutil.copy2(REPO / "README.public.md", dest / "README.md")
+    for src, out in READMES.items():
+        shutil.copy2(REPO / src, dest / out)
     (dest / ".gitignore").write_text(GITIGNORE)
     return copied
 
@@ -116,7 +118,7 @@ def leak_scan(files: list[Path], n: int = 7) -> list[str]:
     grams = {g for g in grams if not any(f in g for f in FORMULAS)} - COMMON
     hits = []
     for f in files:
-        if f.suffix in {".mp3", ".m4a", ".png", ".jpg", ".jpeg", ".woff2"}:
+        if f.suffix in {".mp3", ".m4a", ".png", ".jpg", ".jpeg", ".webp", ".woff2"}:
             continue
         try:
             w = words(f.read_text())
@@ -152,7 +154,7 @@ def main() -> int:
         shutil.rmtree(p) if p.is_dir() and not p.is_symlink() else p.unlink()
     files = copy(dest)
     patch(dest)
-    hits = leak_scan([*files, dest / "README.md"])
+    hits = leak_scan([*files, *(dest / out for out in READMES.values())])
     if hits:
         print("exam text found in the copy:\n  " + "\n  ".join(hits))
         return 1

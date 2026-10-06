@@ -1,79 +1,90 @@
+<div align="center">
+
+<img src="web/icons/icon-192.png" width="84" alt="">
+
 # clean-tcf
 
-**自带题库的 TCF Canada 训练框架：听力、阅读、口语、写作。** 本仓库只有代码和自编的示例题，不含任何真题。
+**An open-source practice app for TCF Canada.**<br>
+Listening · Reading · Speaking · Writing — with answer evidence, per-option analysis, FSRS flashcards and offline use.
 
-> **English.** An open-source practice app for TCF Canada — listening (CO), reading (CE), plus speaking and writing prompt banks: timed mock exams, a wrong-answer book, FSRS flashcards, a frequency-graded word list, offline use and optional cloud sync for a small invited group. It ships **no exam content**: you bring your own question bank (Anki deck or JSON). The interface is in Chinese.
+[![License: MIT](https://img.shields.io/badge/license-MIT-2563eb)](LICENSE)
+![React 19](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-works%20offline-5a0fc8)
+![Exam content](https://img.shields.io/badge/exam%20content-none%20included-64748b)
 
----
+**English** · [简体中文](README.zh-CN.md)
 
-## 这个项目适合谁
+[Quick start](#quick-start) · [Features](#features) · [Your own bank](#use-your-own-question-bank) · [Deploy for a group](#deploy-for-a-group-optional) · [Hosted version](#hosted-version)
 
-适合：
+<img src="docs/images/hero.webp" alt="Practice page on desktop and phone: the transcript, with the evidence for each option underlined" width="100%">
 
-- 目标是 **NCLC 7 及以上**的考生。NCLC 7 要求听力 458 分、阅读 453 分以上。
-- 已经有自己的题库（例如 Anki 卡组），或者愿意自己整理题库。
-- 每天练习，并且想系统地复盘错题和生词。
-- 会运行 `npm` 命令，或者身边有人会。
+</div>
 
-不适合：
+> [!IMPORTANT]
+> This repository has **code and invented demo questions only**. It has no TCF questions, recordings, transcripts or answers. You bring your own question bank (an Anki deck or JSON files).
 
-- 想下载免费题库的人。本仓库没有题目，以后也不会有。
-- 只想看答案、不想复盘的人。这个工具的重点是错题本、闪卡和逐选项解析。
+## Who it is for
 
-## 能做什么
+- Candidates who aim for **NCLC 7 or higher**. NCLC 7 needs 458+ in listening and 453+ in reading.
+- Learners who practise every day and review each mistake, not only the score.
+- People who can run `npm` commands, or who know someone who can.
 
-| 功能 | 说明 |
+**Interface language:** Simplified Chinese. Transcripts and passages have French, Chinese and English views. The dictionary shows Chinese, English and French definitions.
+
+## Features
+
+<table>
+<tr>
+<td width="50%"><img src="docs/images/analysis.webp" alt="Answer analysis"><br><b>Evidence and per-option analysis.</b> After you answer, the transcript marks the sentence behind each option. Each option gets one reason.</td>
+<td width="50%"><img src="docs/images/translation.webp" alt="Sentence translation"><br><b>Sentence-by-sentence translation.</b> Switch the transcript or passage between French, Chinese and English.</td>
+</tr>
+<tr>
+<td><img src="docs/images/dict.webp" alt="Dictionary"><br><b>Double-click a word.</b> See its lemma, IPA, definitions and audio. Add it to your word book with its sentence.</td>
+<td><img src="docs/images/exam.webp" alt="Mock exam"><br><b>Timed mock exam.</b> 39 questions from A1 to C2. It plays each recording once, submits on time and gives a score out of 699 with the NCLC level.</td>
+</tr>
+<tr>
+<td><img src="docs/images/flashcards.webp" alt="Word flashcards"><br><b>FSRS flashcards.</b> Separate decks for questions and words. 7 word modes, including spelling and dictation.</td>
+<td><img src="docs/images/vocab.webp" alt="Graded word list"><br><b>Graded word list.</b> Built from your own bank by frequency and level. Add a whole band to your flashcards.</td>
+</tr>
+<tr>
+<td><img src="docs/images/speaking.webp" alt="Speaking bank"><br><b>Speaking and writing bank.</b> Browse prompts by Tâche and month, filter by topic, or pick one at random.</td>
+<td><img src="docs/images/home.webp" alt="Home page"><br><b>Daily overview.</b> Practice today, streak, cards due, mistakes to fix, days to your exam, and a 26-week heatmap.</td>
+</tr>
+<tr>
+<td><img src="docs/images/dark.webp" alt="Dark mode"><br><b>Dark mode</b> and keyboard shortcuts.</td>
+<td><img src="docs/images/phones.webp" alt="Phone"><br><b>Phone ready.</b> A deployed copy installs to the home screen, caches all text for offline use and downloads audio by level.</td>
+</tr>
+</table>
+
+**Also included**
+
+| | |
 |---|---|
-| 去重练习 | 按难度（A1–C2）练习，同一题只出现一次 |
-| 按套练习、模拟考试 | 39 题一套，按真实考试计时，到点自动交卷，按 699 分制算分 |
-| 错题本 | 答错自动收录，再答对自动标为「已订正」 |
-| 记忆闪卡 | 用 FSRS 算法安排复习；题目卡和单词卡分开，每天新卡上限分开设 |
-| 单词闪卡 | 7 种模式：认词、四选一、听音、回想、例句填空、拼写、听写 |
-| 分级词表 | 按题库词频统计，按难度和频段整组加入闪卡 |
-| 口语、写作题库 | 按 Tâche 和月份浏览题目，按话题筛选，随机抽题 |
-| 练习页 | 原文默认模糊；倍速播放、±3 秒；划词高亮和笔记；双击查词 |
-| 译文和解析 | 有对应数据时，显示逐句译文、答案出处高亮、逐选项解析 |
-| 离线使用 | 文字数据预先缓存；音频按等级下载；手机上可以「添加到主屏幕」 |
-| 云同步（可选） | 自己部署到 Cloudflare，白名单邮箱登录，每人一份记录，多设备合并 |
+| Practice modes | By level with no repeats, by set, mistakes only, favourites only, search results |
+| Listening tools | Blurred transcript until you choose to see it, speed control, ±3 s, replay one sentence |
+| Reading tools | Read-aloud audio that highlights the current word; click a word to start from there |
+| Notes | Highlight any text and add a note; notes and favourites have their own page |
+| Mistake book | Wrong answers go in automatically; a later correct answer marks them as fixed |
+| Search | Search the whole bank (⌘K) |
+| Privacy | All records stay in your browser (IndexedDB). Nothing leaves your device unless you turn on cloud sync |
+| Cloud sync (optional) | Deploy to Cloudflare, sign in by email whitelist, one record per person, merge across devices |
 
-所有记录默认只存在浏览器里（IndexedDB）。不开云同步，就没有任何数据离开你的设备。
+## Quick start
 
-## 不包含什么
+Try the interface with the demo bank. Every demo question was written for this project.
 
-下面的内容**不在**本仓库里，也不接受包含它们的 Pull Request：
-
-- 题目、选项、答案、听力音频、阅读图片。
-- 听力原文和阅读原文。
-- 基于题目生成的译文、解析和答案出处。
-
-原因：TCF 题目的版权属于出题方和出版方。本仓库只公开练习工具。
-
-## 结构
-
-```mermaid
-flowchart LR
-  A[你的 Anki 卡组] -->|scripts/export_anki.py| J[public/data/*.json]
-  B[你自己写的 JSON] --> J
-  J --> S[网站]
-  S <--> I[(浏览器 IndexedDB<br/>你的作答记录)]
-  S <-.可选.-> C[(Cloudflare D1<br/>云同步)]
-```
-
-## 快速开始（示例数据）
-
-示例数据全部是为本项目自编的题，只用来试用界面，不是真题：
-
-| 分区 | 示例 |
+| Section | Demo content |
 |---|---|
-| 听力 | 2 套，每套 6 题（A1–C2 各 1 题）。录音用 macOS 自带的法语语音生成 |
-| 阅读 | 2 套，每套 6 题（A1–C2 各 1 题） |
-| 口语 | Tâche 2、Tâche 3 各 2 组，每组 5 个题目 |
-| 写作 | 2 套，每套 Tâche 1–3 |
+| Listening | 2 sets × 6 questions (A1–C2). Audio made with macOS French voices, with a timed transcript |
+| Reading | 2 sets × 6 questions (A1–C2), with read-aloud audio |
+| Speaking | Tâche 2 and Tâche 3, 2 groups each, 5 prompts per group |
+| Writing | 2 sets, Tâche 1–3 each |
 
-听力和阅读的 24 题都带逐句译文、答案出处和逐选项解析。真实考试每套 39 题，示例每套只有 6 题。
+All 24 listening and reading questions have translations, answer evidence and per-option analysis.
 
-1. 安装 Node.js 22 或更新版本。
-2. 运行下面的命令：
+1. Install Node.js 22 or newer.
+2. Run:
 
    ```bash
    git clone https://github.com/kalebguo/clean-tcf.git
@@ -82,56 +93,70 @@ flowchart LR
    npm run demo
    ```
 
-3. 打开 http://localhost:5173 。
+3. Open http://localhost:5173.
 
-`npm run demo` 把 `demo/public/` 复制到 `public/`。`public/` 里已经有你自己的题库时，它不会覆盖。
+`npm run demo` copies `demo/public/` to `public/`. If `public/` already has your own bank, it stops and changes nothing.
 
-## 用你自己的题库
+## How it works
 
-有两种方式。
+```mermaid
+flowchart LR
+  A[Your Anki deck] -->|scripts/export_anki.py| J[public/data/*.json]
+  B[Your own JSON] --> J
+  G[Translations and analysis<br/>data/p2/gen/*.json] -->|scripts/p2/build_p2.py| J
+  J --> S[Web app]
+  S <--> I[(IndexedDB in the browser<br/>your answers and cards)]
+  S <-.optional.-> C[(Cloudflare D1<br/>cloud sync)]
+```
 
-### 方式 1：自己写 JSON
+## Use your own question bank
 
-把题目写成两个文件：`public/data/listening.json`（听力）和 `public/data/reading.json`（阅读）。格式：
+<details>
+<summary><b>Option 1: write JSON</b></summary>
+
+Put the questions in `public/data/listening.json` and `public/data/reading.json`:
 
 ```jsonc
 {
   "questions": [
     {
-      "id": "CO-1-01",            // 唯一编号：分区-套号-题号
-      "section": "CO",            // CO 听力，CE 阅读
+      "id": "CO-1-01",            // unique: section-set-number
+      "section": "CO",            // CO listening, CE reading
       "level": "A1",              // A1–C2
-      "points": 3,                // 分值：A1 3、A2 9、B1 15、B2 21、C1 26、C2 33
-      "source": "main",           // main 真题，extra 补充题
+      "points": 3,                // A1 3, A2 9, B1 15, B2 21, C1 26, C2 33
+      "source": "main",           // main or extra
       "bankNo": 1,
-      "appearances": [{ "set": "1", "num": 1 }],   // 出现在哪套的第几题
+      "appearances": [{ "set": "1", "num": 1 }],
       "options": ["…", "…", "…", "…"],
       "answer": "B",
-      "audio": "CO_01_Q01.mp3",   // 放在 public/media/
-      "image": "CO_01_Q01.jpg",   // 可选
-      "transcript": ["…"],        // 听力原文，可选
-      "question": "…",            // 阅读题干
-      "passage": ["…"]            // 阅读原文
+      "audio": "CO_01_Q01.mp3",   // in public/media/
+      "image": "CO_01_Q01.jpg",   // optional
+      "transcript": ["…"],        // listening, optional
+      "question": "…",            // reading
+      "passage": ["…"]            // reading
     }
   ],
   "sets": [
-    { "section": "CO", "id": "1", "label": "第1套", "series": [], "complete": true, "questionIds": ["CO-1-01"] }
+    { "section": "CO", "id": "1", "label": "Set 1", "series": [], "complete": true, "questionIds": ["CO-1-01"] }
   ]
 }
 ```
 
-完整的字段定义在 [`src/data/types.ts`](src/data/types.ts)。
+All fields are defined in [`src/data/types.ts`](src/data/types.ts).
 
-### 方式 2：从 Anki 导入
+</details>
 
-如果你的卡组用下面两种笔记类型，可以直接导入：
+<details>
+<summary><b>Option 2: import from Anki</b></summary>
 
-| 笔记类型 | 字段 |
+The import reads two note types:
+
+| Note type | Fields |
 |---|---|
-| `CO_TCFCA`（听力） | Options, Audio, Image, Transcription, Answer, Analyze, Test, Series, Number, Points |
-| `CE_TCFCA`（阅读） | Question, Options, Series, Number, Points, Answer, Analyze, Test, Qphrase |
+| `CO_TCFCA` (listening) | Options, Audio, Image, Transcription, Answer, Analyze, Test, Series, Number, Points |
+| `CE_TCFCA` (reading) | Question, Options, Series, Number, Points, Answer, Analyze, Test, Qphrase |
 
-1. 准备 Python 环境：
+1. Set up Python:
 
    ```bash
    python3 -m venv .venv
@@ -139,59 +164,96 @@ flowchart LR
    .venv/bin/python -m spacy download fr_core_news_md
    ```
 
-2. 运行 `npm run data`。脚本只读 Anki 数据库的拷贝，Anki 开着也可以。
-   - 可选：把一个法语词形表（每行一个词）放在仓库的上一级目录，文件名见 `scripts/vocab_mapreduce.py` 的 `WORDLIST`。没有它时，只用 simplemma 判断一个词是否存在。
-3. 阅读题只有图片时，脚本会在本机做 OCR：macOS Vision 和 PaddleOCR-VL 各识别一遍，再合并。PaddleOCR-VL 模型约 1.1 GB，第一次运行时自动下载。OCR 只能在 Apple Silicon 的 Mac 上运行。
+2. Run `npm run data`. The script reads a copy of the Anki database, so Anki can stay open.
+3. Reading questions that exist only as images go through local OCR (macOS Vision and PaddleOCR-VL, then merged). The PaddleOCR-VL model is about 1.1 GB and downloads on the first run. OCR needs an Apple Silicon Mac.
 
-## 给小组部署（可选）
+Optional: put a French word-form list (one word per line) in the folder above the repository. See `WORDLIST` in `scripts/vocab_mapreduce.py` for the file name. Without it, simplemma decides whether a word exists.
 
-用 Cloudflare 免费套餐，最多 50 人。只有白名单上的邮箱能打开网站。
+</details>
 
-1. 注册 Cloudflare，运行 `npx wrangler login`。
-2. 运行 `npx wrangler d1 create tcf-sync`，把输出的 `database_id` 填进 `wrangler.jsonc`。
-3. 运行 `npx wrangler d1 migrations apply tcf-sync --remote`。
-4. 先部署一个空白占位页，不含题库。这一步只是为了让 Worker 存在，下一步才能给它开 Access：
+<details>
+<summary><b>Optional: translations, evidence and analysis</b></summary>
+
+Write one file per question in `data/p2/gen/<id>.json`, then run `npm run p2`. The 24 files in [`demo/src/gen/`](demo/src/gen) show the format. `scripts/p2/validate_gen.py` checks a file before you build.
+
+</details>
+
+## Deploy for a group (optional)
+
+Uses the Cloudflare free plan. Up to 50 people. Only whitelisted email addresses can open the site.
+
+<details>
+<summary><b>Steps</b></summary>
+
+1. Create a Cloudflare account and run `npx wrangler login`.
+2. Run `npx wrangler d1 create tcf-sync`. Put the `database_id` from the output in `wrangler.jsonc`.
+3. Run `npx wrangler d1 migrations apply tcf-sync --remote`.
+4. Deploy an empty placeholder page first, without your bank. The Worker must exist before you can put Access in front of it:
 
    ```bash
-   mkdir -p dist-web && echo "建设中" > dist-web/index.html
+   mkdir -p dist-web && echo "Coming soon" > dist-web/index.html
    npx wrangler deploy
    ```
 
-5. 在 Cloudflare 后台打开 **Workers & Pages** → 你的 Worker → **Access**，开启 **All traffic**，加入白名单邮箱，登录有效期选 **1 month**。
-6. 打开网站。网站跳转到 `xxx.cloudflareaccess.com/…?kid=…`：`xxx.cloudflareaccess.com` 是团队域名，`kid` 的值是 AUD。把这两个值填进 `wrangler.jsonc`。
-7. 运行 `node scripts/deploy/web.mjs`。
+5. In the Cloudflare dashboard, open **Workers & Pages** → your Worker → **Access**. Turn on **All traffic**, add the whitelisted emails and set the session duration to **1 month**.
+6. Open the site. It redirects to `xxx.cloudflareaccess.com/…?kid=…`. `xxx.cloudflareaccess.com` is the team domain; the `kid` value is the AUD. Put both in `wrangler.jsonc`.
+7. Run `node scripts/deploy/web.mjs`.
 
-> **警告**：没开 Access 就部署，你的题库会对所有人公开。所以第 6 步的两个值没填时，部署脚本拒绝上传。
+> [!WARNING]
+> If you deploy without Access, your bank is public. So the deploy script refuses to upload until both values from step 6 are set.
 
-部署前确认：你有权把题库给小组里的人使用。
+Before you deploy, make sure you have the right to share your bank with the people in your group.
 
-设计细节（同步规则、离线缓存、数据库表）见 [`docs/cloud.md`](docs/cloud.md)。
+Design details (sync rules, offline cache, database tables): [`docs/cloud.md`](docs/cloud.md).
 
-## 申请使用我们的托管版本
+</details>
 
-我自己部署了一份，只给少数认真备考的人用，名额有限（最多 50 人）。
+## Hosted version
 
-申请时请写明：
+I run one deployment for a small group of serious candidates (50 places at most). To apply, tell me:
 
-1. 现在的水平：最近一次 TCF 或模考的听力、阅读分数。
-2. 目标：NCLC 几级，计划哪个月考试。
-3. 每周能练习几个小时。
-4. 是否愿意报告题目和解析里的错误（页面上有「报错」按钮）。
+1. Your latest listening and reading scores (TCF or mock exam).
+2. Your target NCLC level and your exam month.
+3. How many hours a week you can practise.
+4. Whether you will report errors in questions and analyses (each question has a "report" button).
 
-申请方式：申请表（Google 表单）还没开放。开放后，链接放在这里。
+**The application form (Google Forms) is not open yet. The link will go here.**
 
-## 参与开发
+## FAQ
 
-欢迎提交代码和问题。
+<details>
+<summary><b>Why are there no real questions?</b></summary>
 
-- Pull Request 不能包含任何题目内容，包括测试数据。测试只用自编的句子。
-- 提交前运行 `npm run typecheck` 和 `npm test`。
-- 界面文字用中文，写短句，一句话只说一件事。
+TCF questions belong to their publishers. This project publishes the practice tool only. Pull requests that add exam content will be closed.
 
-## 许可
+</details>
 
-- 代码：MIT License，见 [LICENSE](LICENSE)。
-- `demo/` 里的示例题是为本项目自编的，也按 MIT License 发布。
-- 示例词典（`demo/public/data/p2/dict.json`）由 `scripts/p2/build_dict.py` 从维基词典数据（经 kaikki.org）生成，按 CC BY-SA 4.0 发布。
-- MIT License 不包括任何考试内容（题目、录音、文档、原文、译文、解析）。本仓库不分发这些内容。
-- 本项目和 France Éducation international（TCF 的主办方）没有任何关系。TCF 是其注册商标。
+<details>
+<summary><b>Does my data leave my device?</b></summary>
+
+No. Answers, cards, notes and highlights are stored in your browser. They leave the device only if you deploy your own copy with cloud sync, and then only to your own Cloudflare account. The **数据备份** (backup) page exports everything to a JSON file.
+
+</details>
+
+<details>
+<summary><b>Is there an English interface?</b></summary>
+
+Not yet. The interface is in Chinese. Transcripts, passages and the dictionary already have English. Pull requests for an English interface are welcome.
+
+</details>
+
+## Contributing
+
+Issues and pull requests are welcome.
+
+- Never include exam content, also not in tests. Tests use invented sentences only.
+- Run `npm run typecheck` and `npm test` before you open a pull request.
+- Interface text: short sentences, one idea per sentence.
+
+## License
+
+- Code: [MIT](LICENSE).
+- The demo questions in `demo/` were written for this project and are also MIT.
+- The demo dictionary (`demo/public/data/p2/dict.json`) is built by `scripts/p2/build_dict.py` from Wiktionary data (via kaikki.org) and is licensed CC BY-SA 4.0.
+- The MIT license does not cover exam content (questions, recordings, documents, transcripts, translations, analyses). This repository does not distribute any.
+- This project is not affiliated with France Éducation international, which runs the TCF. TCF is its registered trademark.
