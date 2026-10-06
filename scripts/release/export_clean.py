@@ -34,7 +34,7 @@ INCLUDE = [
     "scripts/p2/hant2hans.swift", "scripts/p2/local_mt.py", "scripts/p2/segment.py", "scripts/p2/tts.py",
     "scripts/p2/tts_synth.swift", "scripts/p2/align_audio.py", "scripts/p2/check_align.py", "scripts/p2/validate_gen.py",
 ]
-READMES = {"README.public.md": "README.md", "README.public.zh-CN.md": "README.zh-CN.md"}
+READMES = {"README.public.md": "README.md", "README.public.en.md": "README.en.md"}  # Chinese is the default
 SKIP_PARTS = {"__pycache__", ".DS_Store"}
 ICLOUD_COPY = re.compile(r" \d+(\.[^.]+)?$")  # "name 2.json": a copy made by iCloud
 
