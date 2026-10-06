@@ -10,7 +10,8 @@
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b --noEmit",
     "test": "vitest run",
-    "demo": "node scripts/demo/use.mjs && vite"
+    "demo": "node scripts/demo/use.mjs && vite --mode demo",
+    "deploy:demo": "node scripts/demo/use.mjs && node scripts/deploy/demo.mjs"
   },
   "dependencies": {
     "@capacitor/app": "^8.1.2",

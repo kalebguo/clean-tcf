@@ -15,7 +15,7 @@ Listening · Reading · Speaking · Writing — with answer evidence, per-option
 
 [简体中文](README.md) · **English**
 
-[Quick start](#quick-start) · [Features](#features) · [Your own bank](#use-your-own-question-bank) · [Deploy for a group](#deploy-for-a-group-optional) · [**Hosted version (free)**](#hosted-version-free)
+[**Live demo**](https://clean-tcf-demo.kalebguo.workers.dev) · [Quick start](#quick-start) · [Features](#features) · [Your own bank](#use-your-own-question-bank) · [Deploy for a group](#deploy-for-a-group-optional) · [**Hosted version (free)**](#hosted-version-free)
 
 <img src="docs/images/hero.webp" alt="Practice page on desktop and phone: the transcript, with the evidence for each option underlined" width="100%">
 
@@ -25,13 +25,13 @@ Listening · Reading · Speaking · Writing — with answer evidence, per-option
 > This repository has **code and invented demo questions only**. It has no TCF questions, recordings, transcripts or answers. You bring your own question bank (an Anki deck or JSON files).
 
 > [!TIP]
-> **Want the full question bank?** The hosted version is **free** and covers every listening and reading question, each with translations and per-option analysis. [Details](#hosted-version-free), or email [kalebguo@gmail.com](mailto:kalebguo@gmail.com?subject=clean-tcf%20hosted%20version).
+> **Want the full question bank?** The hosted version is **free** and comes with the full question bank, each question with translations and per-option analysis. [Details](#hosted-version-free), or email [kalebguo@gmail.com](mailto:kalebguo@gmail.com?subject=clean-tcf%20hosted%20version).
 
 ## Who it is for
 
 - Candidates who aim for **NCLC 7 or higher**. NCLC 7 needs 458+ in listening and 453+ in reading.
 - Learners who practise every day and review each mistake, not only the score.
-- People who can run `npm` commands, or who know someone who can.
+- To use your own bank you need to run `npm` commands. The live demo and the hosted version need no install.
 
 **Interface language:** Simplified Chinese. Transcripts and passages have French, Chinese and English views. The dictionary shows Chinese, English and French definitions.
 
@@ -41,8 +41,8 @@ Don't want to build a bank yourself? I run a full deployment, **free** for serio
 
 | | |
 |---|---|
-| **Covers every question** | 882 listening and 945 reading questions, each with sentence translations, answer evidence and per-option analysis (in Chinese) |
-| Speaking and writing | 1,127 speaking prompts and 355 writing prompts, by Tâche and month |
+| **Full question bank** | Listening and reading, each question with sentence translations, answer evidence and per-option analysis (in Chinese) |
+| Speaking and writing | Speaking and writing prompt banks, by Tâche and month |
 | Nothing to install | Works on computer and phone; add it to the home screen; practise offline |
 | Sync | Sign in with a whitelisted email; answers and flashcards sync across devices |
 
@@ -93,7 +93,9 @@ Don't want to build a bank yourself? I run a full deployment, **free** for serio
 
 ## Quick start
 
-Try the interface with the demo bank. Every demo question was written for this project.
+No install needed: open the **[live demo](https://clean-tcf-demo.kalebguo.workers.dev)**. No sign-in; your answers stay in your browser.
+
+Or run the demo bank locally. Every demo question was written for this project.
 
 | Section | Demo content |
 |---|---|

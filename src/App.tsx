@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration, useNavigate } from "react-router-dom";
 import { CloudBanners } from "./cloud/CloudUI";
+import { DemoBanner } from "./components/DemoBanner";
 import { DictPanel } from "./components/DictPanel";
 import { SettingsModal } from "./components/SettingsModal";
 import { UIContext } from "./components/ui";
@@ -154,6 +155,7 @@ function Shell() {
         </div>
       )}
       <CloudBanners />
+      <DemoBanner />
       <Outlet />
       {/* a new page starts at the top, back / forward restores; keyed by path so filters in the query keep the position */}
       <ScrollRestoration getKey={(loc) => loc.pathname} />

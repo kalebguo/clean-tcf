@@ -26,7 +26,7 @@ REPO = Path(__file__).resolve().parent.parent.parent
 INCLUDE = [
     "src", "worker", "migrations", "web", "docs", "demo",
     "index.html", "components.json", "tsconfig.json", "vite.config.ts", "vite.web.config.ts",
-    "package.json", "package-lock.json", "wrangler.jsonc", "LICENSE",
+    "package.json", "package-lock.json", "wrangler.jsonc", "wrangler.demo.jsonc", "LICENSE",
     "scripts/data.sh", "scripts/export_anki.py", "scripts/build_site_data.py", "scripts/merge_ocr.py",
     "scripts/ocr.swift", "scripts/ocr_vlm.py", "scripts/vocab_mapreduce.py",
     "scripts/deploy", "scripts/demo", "scripts/release",
@@ -41,6 +41,7 @@ ICLOUD_COPY = re.compile(r" \d+(\.[^.]+)?$")  # "name 2.json": a copy made by iC
 GITIGNORE = """node_modules
 dist
 dist-web
+dist-demo
 dist-ios
 build
 .venv
@@ -76,7 +77,8 @@ def copy(dest: Path) -> list[Path]:
 def patch(dest: Path) -> None:
     pkg = json.loads((dest / "package.json").read_text())
     pkg["scripts"] = {k: v for k, v in pkg["scripts"].items() if not k.startswith("ios:")}
-    pkg["scripts"]["demo"] = "node scripts/demo/use.mjs && vite"
+    pkg["scripts"]["demo"] = "node scripts/demo/use.mjs && vite --mode demo"
+    pkg["scripts"]["deploy:demo"] = "node scripts/demo/use.mjs && node scripts/deploy/demo.mjs"
     (dest / "package.json").write_text(json.dumps(pkg, indent=2, ensure_ascii=False) + "\n")
     w = (dest / "wrangler.jsonc").read_text()
     w = re.sub(r'"database_id":\s*"[^"]*"', '"database_id": "<npx wrangler d1 create tcf-sync 的输出>"', w)
